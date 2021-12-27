@@ -8,9 +8,9 @@ import org.slf4j.LoggerFactory;
  * @date: 2021/12/27 14:11
  * @description: 88. 合并两个有序数组 https://leetcode-cn.com/problems/merge-sorted-array
  */
-public class LeetCode88 {
+public class MergeOrderedArray {
 
-    private static final Logger logger = LoggerFactory.getLogger(LeetCode88.class);
+    private static final Logger logger = LoggerFactory.getLogger(MergeOrderedArray.class);
 
     /*
      * nums1.length == m + n
