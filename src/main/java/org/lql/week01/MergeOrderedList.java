@@ -1,5 +1,6 @@
 package org.lql.week01;
 
+import org.lql.common.ListNode;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -22,23 +23,6 @@ public class MergeOrderedList {
      */
 
     private static final Logger logger = LoggerFactory.getLogger(MergeOrderedList.class);
-
-    public static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-    }
 
     /**
      * 合并两个有序链表
@@ -81,10 +65,10 @@ public class MergeOrderedList {
         ListNode list1 = new ListNode(1, new ListNode(2, new ListNode(4, null)));
         ListNode list2 = new ListNode(1, new ListNode(3, new ListNode(4, null)));
         ListNode listNode = mergeTwoLists(list1, list2);
-        while (listNode != null){
+        while (listNode != null) {
             System.out.print(listNode.val + " -> ");
             listNode = listNode.next;
         }
-        System.out.print( "null");
+        System.out.print("null");
     }
 }
