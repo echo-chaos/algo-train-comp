@@ -5,7 +5,7 @@ import org.lql.common.ListNode;
 /**
  * @author: lql
  * @date: 2021/12/28 10:28
- * @description: 206 反转链表
+ * @description: 206 反转链表 https://leetcode-cn.com/problems/reverse-linked-list/
  */
 public class ReverseList {
 
