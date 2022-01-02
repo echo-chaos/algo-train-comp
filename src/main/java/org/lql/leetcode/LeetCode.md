@@ -6,4 +6,5 @@
 4. DetectCycle 142. 环形链表 II https://leetcode-cn.com/problems/linked-list-cycle-ii/
 5. Valid 20. 有效的括号 https://leetcode-cn.com/problems/valid-parentheses/
 6. ReverseKGroup 25. K 个一组翻转链表 https://leetcode-cn.com/problems/reverse-nodes-in-k-group/
-7. 
+7. MinStack 155. 最小栈 https://leetcode-cn.com/problems/min-stack/
+8. 
