@@ -5,4 +5,5 @@
 3. HasCycle  141. 环形链表 https://leetcode-cn.com/problems/linked-list-cycle/
 4. DetectCycle 142. 环形链表 II https://leetcode-cn.com/problems/linked-list-cycle-ii/
 5. Valid 20. 有效的括号 https://leetcode-cn.com/problems/valid-parentheses/
-6. 
+6. ReverseKGroup 25. K 个一组翻转链表 https://leetcode-cn.com/problems/reverse-nodes-in-k-group/
+7. 
