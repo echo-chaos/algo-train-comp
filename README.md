@@ -28,6 +28,43 @@
 <details>
 <summary>practice</summary>
 
+  * [==========week-001==========]
+  * [Calculate-224. 基本计算器](./src/main/java/org/lql/practice/week01/Calculate.java)【待完成】
+  * [EvalRPN-150. 逆波兰表达式求值](./src/main/java/org/lql/practice/week01/EvalRPN.java)【待完成】
+  * [LargestRectangleArea-84. 柱状图中最大的矩形](./src/main/java/org/lql/practice/week01/LargestRectangleArea.java)【待完成】
+  * [MaxSlidingWindow-239. 滑动窗口最大值](./src/main/java/org/lql/practice/week01/MaxSlidingWindow.java)【待完成】
+  * [MoveZeroes-283. 移动零](./src/main/java/org/lql/practice/week01/MoveZeroes.java)【待完成】
+  * [NeighborSearch-邻值查找](./src/main/java/org/lql/practice/week01/NeighborSearch.java)【待完成】
+  * [RemoveDuplicates-26. 删除有序数组中的重复项 ](./src/main/java/org/lql/practice/week01/RemoveDuplicates.java)【待完成】
+  * [Trap-42. 接雨水](./src/main/java/org/lql/practice/week01/Trap.java)【待完成】
+      
+  * [==========week-002==========]
+    
+
+  * [==========week-003==========]
+    
+
+  * [==========week-004==========]
+    
+
+  * [==========week-005==========]
+    
+
+  * [==========week-006==========]
+    
+
+  * [==========week-007==========]
+    
+
+  * [==========week-008==========]
+    
+
+  * [==========week-009==========]
+    
+
+  * [==========week-010==========]
+
+
 </details>
 <details>
 <summary>week01</summary>
