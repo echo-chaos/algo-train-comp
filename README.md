@@ -32,11 +32,11 @@
   * [==========week-001==========]
   * [Calculate-224. 基本计算器](./src/main/java/org/lql/practice/week01/Calculate.java)【待完成】
   * [EvalRPN-150. 逆波兰表达式求值](./src/main/java/org/lql/practice/week01/EvalRPN.java)【待完成】
-  * [LargestRectangleArea-84. 柱状图中最大的矩形](./src/main/java/org/lql/practice/week01/LargestRectangleArea.java)【待完成】
+  * [LargestRectangleArea-84. 柱状图中最大的矩形](./src/main/java/org/lql/practice/week01/LargestRectangleArea.java)【已完成】
   * [MaxSlidingWindow-239. 滑动窗口最大值](./src/main/java/org/lql/practice/week01/MaxSlidingWindow.java)【待完成】
-  * [MoveZeroes-283. 移动零](./src/main/java/org/lql/practice/week01/MoveZeroes.java)【待完成】
+  * [MoveZeroes-283. 移动零](./src/main/java/org/lql/practice/week01/MoveZeroes.java)【已完成】
   * [NeighborSearch-邻值查找](./src/main/java/org/lql/practice/week01/NeighborSearch.java)【待完成】
-  * [RemoveDuplicates-26. 删除有序数组中的重复项 ](./src/main/java/org/lql/practice/week01/RemoveDuplicates.java)【待完成】
+  * [RemoveDuplicates-26. 删除有序数组中的重复项 ](./src/main/java/org/lql/practice/week01/RemoveDuplicates.java)【已完成】
   * [Trap-42. 接雨水](./src/main/java/org/lql/practice/week01/Trap.java)【待完成】
       
   * [==========week-002==========]
