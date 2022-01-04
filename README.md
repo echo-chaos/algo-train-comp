@@ -70,7 +70,7 @@
 <details>
 <summary>week01</summary>
   
-  * [MaximalRectangle-85. 最大矩形](./src/main/java/org/lql/week01/MaximalRectangle.java)【已完成-有问题】
+  * [MaximalRectangle-85. 最大矩形](./src/main/java/org/lql/week01/MaximalRectangle.java)【已完成】
   * [MergeOrderedList-21 合并两个有序链表](./src/main/java/org/lql/week01/MergeOrderedList.java)【已完成】
   * [MyCircularDeque-641. 设计循环双端队列](./src/main/java/org/lql/week01/MyCircularDeque.java)【已完成】
   * [PlusOne-1. 加一](./src/main/java/org/lql/week01/PlusOne.java)【已完成】
