@@ -20,6 +20,7 @@
   * [ReverseGroup-25. K 个一组翻转链表](./src/main/java/org/lql/leetcode/ReverseGroup.java)【day006】
   * [MinStack-155. 最小栈](./src/main/java/org/lql/leetcode/MinStack.java)【day007】
   * [TwoSum-1. 两数之和](./src/main/java/org/lql/leetcode/TwoSum.java)【day008】
+  * [GroupAnagrams-49. 字母异位词分组](./src/main/java/org/lql/leetcode/GroupAnagrams.java)【day008】
   
   * [LeetCode](./src/main/java/org/lql/leetcode/LeetCode.md)
   
