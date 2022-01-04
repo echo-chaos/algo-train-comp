@@ -1,6 +1,8 @@
 package org.lql.week01;
 
+import java.util.ArrayDeque;
 import java.util.Arrays;
+import java.util.Deque;
 import java.util.Stack;
 
 /**
@@ -77,6 +79,8 @@ public class MaximalRectangle {
                 }
                 stack.push(index);
             }
+            // ！！！因为使用的是二维数组，所以在一行单调栈计算完之后需要进行清空操作
+            stack.clear();
         }
         return ans;
     }
