@@ -22,6 +22,7 @@
 * [TwoSum-1. 两数之和](./src/main/java/org/lql/leetcode/TwoSum.java)【day008】
 * [GroupAnagrams-49. 字母异位词分组](./src/main/java/org/lql/leetcode/GroupAnagrams.java)【day009】
 * [LRUCache-146. LRU 缓存](./src/main/java/org/lql/leetcode/LRUCache.java)【day010】
+* [NumMatrix-304. 二维区域和检索 - 矩阵不可变](./src/main/java/org/lql/leetcode/NumMatrix.java)【day010】
 
 * [LeetCode](./src/main/java/org/lql/leetcode/LeetCode.md)
 
