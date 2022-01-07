@@ -22,7 +22,8 @@
 * [TwoSum-1. 两数之和](./src/main/java/org/lql/leetcode/TwoSum.java)【day008】
 * [GroupAnagrams-49. 字母异位词分组](./src/main/java/org/lql/leetcode/GroupAnagrams.java)【day009】
 * [LRUCache-146. LRU 缓存](./src/main/java/org/lql/leetcode/LRUCache.java)【day010】
-* [NumMatrix-304. 二维区域和检索 - 矩阵不可变](./src/main/java/org/lql/leetcode/NumMatrix.java)【day010】
+* [NumMatrix-304. 二维区域和检索 - 矩阵不可变](./src/main/java/org/lql/leetcode/NumMatrix.java)【day011】
+* [MaxSubArray-53. 最大子数组和](./src/main/java/org/lql/leetcode/MaxSubArray.java)【day012】
 
 * [LeetCode](./src/main/java/org/lql/leetcode/LeetCode.md)
 
@@ -45,6 +46,7 @@
 * [LRUCache-146. LRU 缓存](./src/main/java/org/lql/practice/week02/LRUCache.java)【已完成】
 * [RobotSim-874. 模拟行走机器人](./src/main/java/org/lql/practice/week02/RobotSim.java)【已完成】
 * [GroupAnagrams-49. 字母异位词分组](./src/main/java/org/lql/practice/week02/GroupAnagrams.java)【已完成】
+* [FindSubstring-30. 串联所有单词的子串](./src/main/java/org/lql/practice/week02/FindSubstring.java)【已完成】
 
 
 * [==========week-003==========]
