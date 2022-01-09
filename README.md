@@ -49,6 +49,8 @@
 * [RobotSim-874. 模拟行走机器人](./src/main/java/org/lql/practice/week02/RobotSim.java)【已完成】
 * [GroupAnagrams-49. 字母异位词分组](./src/main/java/org/lql/practice/week02/GroupAnagrams.java)【已完成】
 * [FindSubstring-30. 串联所有单词的子串](./src/main/java/org/lql/practice/week02/FindSubstring.java)【已完成】
+* [MaxSubArray-53. 最大子数组和](./src/main/java/org/lql/practice/week02/MaxSubArray.java)【已完成】
+* [NumberOfSubarrays-1248. 统计「优美子数组」](./src/main/java/org/lql/practice/week02/NumberOfSubarrays.java)【已完成】
 
 
 * [==========week-003==========]
