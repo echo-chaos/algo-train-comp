@@ -86,4 +86,9 @@
 <details>
 <summary>week02</summary>
 
+ * [FindShortestSubArray-697. 数组的度](./src/main/java/org/lql/week02/FindShortestSubArray.java)【已完成】
+ * [NumSubmatrixSumTarget-1074. 元素和为目标值的子矩阵数量](./src/main/java/org/lql/week02/NumSubmatrixSumTarget.java)【已完成】
+ * [SubarraySum-560. 和为 K 的子数组](./src/main/java/org/lql/week02/SubarraySum.java)【已完成】
+ * [SubdomainVisits-811. 子域名访问计数](./src/main/java/org/lql/week02/SubdomainVisits.java)【已完成】
+
 </details>

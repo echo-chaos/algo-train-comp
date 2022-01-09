@@ -75,16 +75,11 @@ public class FindSubstring {
     }
 
     private boolean compareMaps(Map<String, Integer> splitMap, Map<String, Integer> wordsMap) {
-        boolean flag = false;
+        boolean flag = true;
         for (String key : splitMap.keySet()) {
-            if (wordsMap.containsKey(key)) {
-                if (splitMap.get(key).longValue() == wordsMap.get(key).longValue()) {
-                    flag = true;
-                } else {
-                    return false;
-                }
-            } else {
-                return false;
+            Integer value = splitMap.get(key);
+            if (!wordsMap.containsKey(key) || !wordsMap.get(key).equals(value)) {
+                flag = false;
             }
         }
         return flag;
