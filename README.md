@@ -54,6 +54,7 @@
 * [CorpFlightBookings-1109. 航班预订统计](./src/main/java/org/lql/practice/week02/CorpFlightBookings.java)【已完成】
 * [ThreeSum-15. 三数之和](./src/main/java/org/lql/practice/week02/ThreeSum.java)【已完成】
 * [TwoSum-167. 两数之和 II - 输入有序数组](./src/main/java/org/lql/practice/week02/TwoSum.java)【已完成】
+* [MaxArea-11. 盛最多水的容器](./src/main/java/org/lql/practice/week02/MaxArea.java)【已完成】
 
 
 * [==========week-003==========]
