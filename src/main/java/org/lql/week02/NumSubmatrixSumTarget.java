@@ -15,15 +15,17 @@ public class NumSubmatrixSumTarget {
         int ans = 0;
         int m = matrix.length;
         int n = matrix[0].length;
-        // 二维数组矩阵 ---> 一维前缀和
+        // 枚举第i行到第j列
         for (int i = 0; i < m; i++) {
             int[] sum = new int[n];
             for (int j = i; j < m; j++) {
                 for (int k = 0; k < n; k++) {
                     sum[k] += matrix[j][k];
                 }
-                System.out.println(Arrays.toString(sum));
+                // 计算符合条件的子矩阵数量
                 ans += subarraySum(sum, target);
+                System.out.println(Arrays.toString(sum));
+                System.out.println(ans);
             }
         }
         return ans;
