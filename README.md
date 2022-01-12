@@ -28,6 +28,7 @@
 * [MaxArea-11. 盛最多水的容器](./src/main/java/org/lql/leetcode/MaxArea.java)【day014】
 * [Subsets-78. 子集](./src/main/java/org/lql/leetcode/Subsets.java)【day015】
 * [Combine-77. 组合](./src/main/java/org/lql/leetcode/Combine.java)【day016】
+* [IsValidBST-98. 验证二叉搜索树](./src/main/java/org/lql/leetcode/IsValidBST.java)【day017】
 
 * [LeetCode](./src/main/java/org/lql/leetcode/LeetCode.md)
 
