@@ -12,23 +12,24 @@
 <details>
 <summary>leetcode</summary>
 
-* [MergeOrderedArray-88. 合并两个有序数组](./src/main/java/org/lql/leetcode/MergeOrderedArray.java)【day001】
-* [ReverseList-206 反转链表](./src/main/java/org/lql/leetcode/ReverseList.java)【day002】
-* [HasCycle-141. 环形链表](./src/main/java/org/lql/leetcode/HasCycle.java)【day003】
-* [DetectCycle-142. 环形链表](./src/main/java/org/lql/leetcode/DetectCycle.java)【day004】
-* [Valid-20. 有效的括号](./src/main/java/org/lql/leetcode/Valid.java)【day005】
-* [ReverseGroup-25. K 个一组翻转链表](./src/main/java/org/lql/leetcode/ReverseGroup.java)【day006】
-* [MinStack-155. 最小栈](./src/main/java/org/lql/leetcode/MinStack.java)【day007】
-* [TwoSum-1. 两数之和](./src/main/java/org/lql/leetcode/TwoSum.java)【day008】
-* [GroupAnagrams-49. 字母异位词分组](./src/main/java/org/lql/leetcode/GroupAnagrams.java)【day009】
-* [LRUCache-146. LRU 缓存](./src/main/java/org/lql/leetcode/LRUCache.java)【day010】
-* [NumMatrix-304. 二维区域和检索 - 矩阵不可变](./src/main/java/org/lql/leetcode/NumMatrix.java)【day011】
-* [MaxSubArray-53. 最大子数组和](./src/main/java/org/lql/leetcode/MaxSubArray.java)【day012】
-* [ThreeSum-15. 三数之和](./src/main/java/org/lql/leetcode/ThreeSum.java)【day013】
-* [MaxArea-11. 盛最多水的容器](./src/main/java/org/lql/leetcode/MaxArea.java)【day014】
-* [Subsets-78. 子集](./src/main/java/org/lql/leetcode/Subsets.java)【day015】
-* [Combine-77. 组合](./src/main/java/org/lql/leetcode/Combine.java)【day016】
-* [IsValidBST-98. 验证二叉搜索树](./src/main/java/org/lql/leetcode/IsValidBST.java)【day017】
+* 【day001】[MergeOrderedArray-88. 合并两个有序数组](./src/main/java/org/lql/leetcode/MergeOrderedArray.java)
+* 【day002】[ReverseList-206 反转链表](./src/main/java/org/lql/leetcode/ReverseList.java)
+* 【day003】[HasCycle-141. 环形链表](./src/main/java/org/lql/leetcode/HasCycle.java)
+* 【day004】[DetectCycle-142. 环形链表](./src/main/java/org/lql/leetcode/DetectCycle.java)
+* 【day005】[Valid-20. 有效的括号](./src/main/java/org/lql/leetcode/Valid.java)
+* 【day006】[ReverseGroup-25. K 个一组翻转链表](./src/main/java/org/lql/leetcode/ReverseGroup.java)
+* 【day007】[MinStack-155. 最小栈](./src/main/java/org/lql/leetcode/MinStack.java)
+* 【day008】[TwoSum-1. 两数之和](./src/main/java/org/lql/leetcode/TwoSum.java)
+* 【day009】[GroupAnagrams-49. 字母异位词分组](./src/main/java/org/lql/leetcode/GroupAnagrams.java)
+* 【day010】[LRUCache-146. LRU 缓存](./src/main/java/org/lql/leetcode/LRUCache.java)
+* 【day011】[NumMatrix-304. 二维区域和检索 - 矩阵不可变](./src/main/java/org/lql/leetcode/NumMatrix.java)
+* 【day012】[MaxSubArray-53. 最大子数组和](./src/main/java/org/lql/leetcode/MaxSubArray.java)
+* 【day013】[ThreeSum-15. 三数之和](./src/main/java/org/lql/leetcode/ThreeSum.java)
+* 【day014】[MaxArea-11. 盛最多水的容器](./src/main/java/org/lql/leetcode/MaxArea.java)
+* 【day015】[Subsets-78. 子集](./src/main/java/org/lql/leetcode/Subsets.java)
+* 【day016】[Combine-77. 组合](./src/main/java/org/lql/leetcode/Combine.java)
+* 【day017】[IsValidBST-98. 验证二叉搜索树](./src/main/java/org/lql/leetcode/IsValidBST.java)
+* 【day018】[MyPow-50. Pow(x, n)](./src/main/java/org/lql/leetcode/MyPow.java)
 
 * [LeetCode](./src/main/java/org/lql/leetcode/LeetCode.md)
 
