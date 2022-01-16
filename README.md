@@ -30,6 +30,9 @@
 * 【day016】[Combine-77. 组合](./src/main/java/org/lql/leetcode/Combine.java)
 * 【day017】[IsValidBST-98. 验证二叉搜索树](./src/main/java/org/lql/leetcode/IsValidBST.java)
 * 【day018】[MyPow-50. Pow(x, n)](./src/main/java/org/lql/leetcode/MyPow.java)
+* 【day019】[GenerateParenthesis-22. 括号生成](./src/main/java/org/lql/leetcode/GenerateParenthesis.java)
+* 【day020】[Codec-297. 二叉树的序列化与反序列化](./src/main/java/org/lql/leetcode/Codec.java)
+* 【day021】[CanFinish-207. 课程表](./src/main/java/org/lql/leetcode/CanFinish.java)
 
 * [LeetCode](./src/main/java/org/lql/leetcode/LeetCode.md)
 
