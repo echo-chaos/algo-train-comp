@@ -33,6 +33,7 @@
 * 【day019】[GenerateParenthesis-22. 括号生成](./src/main/java/org/lql/leetcode/GenerateParenthesis.java)
 * 【day020】[Codec-297. 二叉树的序列化与反序列化](./src/main/java/org/lql/leetcode/Codec.java)
 * 【day021】[CanFinish-207. 课程表](./src/main/java/org/lql/leetcode/CanFinish.java)
+* 【day021】[FindRedundantConnection-684. 冗余连接](./src/main/java/org/lql/leetcode/FindRedundantConnection.java)
 
 * [LeetCode](./src/main/java/org/lql/leetcode/LeetCode.md)
 
@@ -64,11 +65,7 @@
 * [MaxArea-11. 盛最多水的容器](./src/main/java/org/lql/practice/week02/MaxArea.java)【已完成】
 
 * [==========week-003==========]
-* [BuildTree-106. 从中序与后序遍历序列构造二叉树](./src/main/java/org/lql/week03/BuildTree.java)【已完成】
-* [FindOrder-210. 课程表 II](./src/main/java/org/lql/week03/FindOrder.java)【已完成】
-* [FindRedundantDirectedConnection-685. 冗余连接 II](./src/main/java/org/lql/week03/FindRedundantDirectedConnection.java)【已完成】
-* [MergeKLists-23. 合并K个升序链表](./src/main/java/org/lql/week03/MergeKLists.java)【已完成】
-* [PermuteUnique-47. 全排列 II](./src/main/java/org/lql/week03/PermuteUnique.java)【已完成】
+
 
 * [==========week-004==========]
 
@@ -103,9 +100,19 @@
 <details>
 <summary>week02</summary>
 
- * [FindShortestSubArray-697. 数组的度](./src/main/java/org/lql/week02/FindShortestSubArray.java)【已完成】
- * [NumSubmatrixSumTarget-1074. 元素和为目标值的子矩阵数量](./src/main/java/org/lql/week02/NumSubmatrixSumTarget.java)【已完成】
- * [SubarraySum-560. 和为 K 的子数组](./src/main/java/org/lql/week02/SubarraySum.java)【已完成】
- * [SubdomainVisits-811. 子域名访问计数](./src/main/java/org/lql/week02/SubdomainVisits.java)【已完成】
+* [FindShortestSubArray-697. 数组的度](./src/main/java/org/lql/week02/FindShortestSubArray.java)【已完成】
+* [NumSubmatrixSumTarget-1074. 元素和为目标值的子矩阵数量](./src/main/java/org/lql/week02/NumSubmatrixSumTarget.java)【已完成】
+* [SubarraySum-560. 和为 K 的子数组](./src/main/java/org/lql/week02/SubarraySum.java)【已完成】
+* [SubdomainVisits-811. 子域名访问计数](./src/main/java/org/lql/week02/SubdomainVisits.java)【已完成】
+
+</details>
+<details>
+<summary>week03</summary>
+
+* [BuildTree-106. 从中序与后序遍历序列构造二叉树](./src/main/java/org/lql/week03/BuildTree.java)【已完成】
+* [FindOrder-210. 课程表 II](./src/main/java/org/lql/week03/FindOrder.java)【已完成】
+* [FindRedundantDirectedConnection-685. 冗余连接 II](./src/main/java/org/lql/week03/FindRedundantDirectedConnection.java)【已完成】
+* [MergeKLists-23. 合并K个升序链表](./src/main/java/org/lql/week03/MergeKLists.java)【已完成】
+* [PermuteUnique-47. 全排列 II](./src/main/java/org/lql/week03/PermuteUnique.java)【已完成】
 
 </details>
