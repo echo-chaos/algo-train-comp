@@ -115,9 +115,9 @@
 <summary>week03</summary>
 
 * [BuildTree-106. 从中序与后序遍历序列构造二叉树](./src/main/java/org/lql/week03/BuildTree.java)【已完成】
-* [FindOrder-210. 课程表 II](./src/main/java/org/lql/week03/FindOrder.java)【已完成】
-* [FindRedundantDirectedConnection-685. 冗余连接 II](./src/main/java/org/lql/week03/FindRedundantDirectedConnection.java)【已完成】
-* [MergeKLists-23. 合并K个升序链表](./src/main/java/org/lql/week03/MergeKLists.java)【已完成】
-* [PermuteUnique-47. 全排列 II](./src/main/java/org/lql/week03/PermuteUnique.java)【已完成】
+* [FindOrder-210. 课程表 II](./src/main/java/org/lql/week03/FindOrder.java)【未完成】
+* [FindRedundantDirectedConnection-685. 冗余连接 II](./src/main/java/org/lql/week03/FindRedundantDirectedConnection.java)【未完成】
+* [MergeKLists-23. 合并K个升序链表](./src/main/java/org/lql/week03/MergeKLists.java)【未完成】
+* [PermuteUnique-47. 全排列 II](./src/main/java/org/lql/week03/PermuteUnique.java)【未完成】
 
 </details>
