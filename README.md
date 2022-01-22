@@ -35,6 +35,10 @@
 * 【day021】[CanFinish-207. 课程表](./src/main/java/org/lql/leetcode/CanFinish.java)
 * 【day022】[FindRedundantConnection-684. 冗余连接](./src/main/java/org/lql/leetcode/FindRedundantConnection.java)
 * 【day023】[LetterCombinations-17. 电话号码的字母组合](./src/main/java/org/lql/leetcode/LetterCombinations.java)
+* 【day024】[SolveNQueens-51. N 皇后](./src/main/java/org/lql/leetcode/SolveNQueens.java)
+* 【day025】[NumIslands-200. 岛屿数量](./src/main/java/org/lql/leetcode/NumIslands.java)
+* 【day026】[MinMutation-433. 最小基因变化](./src/main/java/org/lql/leetcode/MinMutation.java)
+* 【day027】[DeleteNode-450. 删除二叉搜索树中的节点](./src/main/java/org/lql/leetcode/DeleteNode.java)
 
 * [LeetCode](./src/main/java/org/lql/leetcode/LeetCode.md)
 
