@@ -37,9 +37,63 @@ public class MergeKLists {
 
     private static final Logger logger = LoggerFactory.getLogger(MergeKLists.class);
 
-
     public ListNode mergeKLists(ListNode[] lists) {
+        if (lists.length == 0) {
+            return null;
+        }
+        int length = lists.length;
+        return solve(0, length - 1, lists);
+    }
 
-        return null;
+    private ListNode solve(int start, int end, ListNode[] lists) {
+        if (start == end) {
+            return lists[start];
+        }
+        int mid = (end - start) / 2 + start;
+        ListNode left = solve(start, mid, lists);
+        ListNode right = solve(mid + 1, end, lists);
+        return mergeTwoLists(left, right);
+    }
+
+    private ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+        if (list1 == null) {
+            return list2;
+        }
+        if (list2 == null) {
+            return list1;
+        }
+        ListNode res = new ListNode(0, null);
+        ListNode curr = res;
+        while (list1 != null && list2 != null) {
+            if (list1.val < list2.val) {
+                curr.next = list1;
+                list1 = list1.next;
+            } else {
+                curr.next = list2;
+                list2 = list2.next;
+            }
+            curr = curr.next;
+        }
+        if (list1 != null) {
+            curr.next = list1;
+        }
+        if (list2 != null) {
+            curr.next = list2;
+        }
+        return res.next;
+    }
+
+    public static void main(String[] args) {
+        ListNode node1 = new ListNode(1, new ListNode(4, new ListNode(5, null)));
+        ListNode node2 = new ListNode(1, new ListNode(3, new ListNode(4, null)));
+        ListNode node3 = new ListNode(2, new ListNode(6, new ListNode(8, null)));
+        ListNode[] lists = {node1, node2, node3};
+        MergeKLists mergeKLists = new MergeKLists();
+        ListNode listNode = mergeKLists.mergeKLists(lists);
+        while (listNode != null){
+            System.out.print(listNode.val + " -> ");
+            listNode = listNode.next;
+        }
+        System.out.print("null");
     }
 }
