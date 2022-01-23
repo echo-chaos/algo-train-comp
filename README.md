@@ -122,3 +122,11 @@
 * [PermuteUnique-47. 全排列 II](./src/main/java/org/lql/week03/PermuteUnique.java)【未完成】
 
 </details>
+<details>
+<summary>week04</summary>
+
+* [ConvertBST-538. 把二叉搜索树转换为累加树](./src/main/java/org/lql/week04/ConvertBST.java)【未完成】
+* [Solve-130. 被围绕的区域](./src/main/java/org/lql/week04/Solve.java)【未完成】
+* [Twitter-355. 设计推特](./src/main/java/org/lql/week04/Twitter.java)【未完成】
+
+</details>
