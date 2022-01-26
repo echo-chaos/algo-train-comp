@@ -39,7 +39,10 @@
 * 【day025】[NumIslands-200. 岛屿数量](./src/main/java/org/lql/leetcode/NumIslands.java)
 * 【day026】[MinMutation-433. 最小基因变化](./src/main/java/org/lql/leetcode/MinMutation.java)
 * 【day027】[DeleteNode-450. 删除二叉搜索树中的节点](./src/main/java/org/lql/leetcode/DeleteNode.java)
-* 【day027】[MergeKLists-23. 合并K个升序链表](./src/main/java/org/lql/leetcode/MergeKLists.java)
+* 【day028】[MergeKLists-23. 合并K个升序链表](./src/main/java/org/lql/leetcode/MergeKLists.java)
+* 【day029】[MaxSlidingWindow-239. 滑动窗口最大值](./src/main/java/org/lql/leetcode/MaxSlidingWindow.java)
+* 【day030】[Search-704. 二分查找](./src/main/java/org/lql/leetcode/Search.java)
+* 【day031】[SearchRange-34. 在排序数组中查找元素的第一个和最后一个位置](./src/main/java/org/lql/leetcode/SearchRange.java)
 
 * [LeetCode](./src/main/java/org/lql/leetcode/LeetCode.md)
 
