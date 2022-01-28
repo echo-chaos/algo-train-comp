@@ -44,6 +44,7 @@
 * 【day030】[Search-704. 二分查找](./src/main/java/org/lql/leetcode/Search.java)
 * 【day031】[SearchRange-34. 在排序数组中查找元素的第一个和最后一个位置](./src/main/java/org/lql/leetcode/SearchRange.java)
 * 【day032】[MySqrt-69. Sqrt(x)](./src/main/java/org/lql/leetcode/MySqrt.java)
+* 【day033】[FindPeakElement-162. 寻找峰值](./src/main/java/org/lql/leetcode/FindPeakElement.java)
 
 * [LeetCode](./src/main/java/org/lql/leetcode/LeetCode.md)
 
