@@ -22,8 +22,22 @@ public class ConvertBST {
      */
     private static final Logger logger = LoggerFactory.getLogger(ConvertBST.class);
 
-    public TreeNode convertBST(TreeNode root) {
+    int sum = 0;
 
-        return new TreeNode();
+    public TreeNode convertBST(TreeNode root) {
+        if (root != null) {
+            convertBST(root.right);
+            sum += root.val;
+            root.val = sum;
+            convertBST(root.left);
+        }
+        return root;
+    }
+
+    public static void main(String[] args) {
+        ConvertBST convertBST = new ConvertBST();
+        TreeNode root = new TreeNode(3, new TreeNode(2, new TreeNode(1), new TreeNode()), new TreeNode(1));
+        TreeNode node = convertBST.convertBST(root);
+        System.out.println(node);
     }
 }
