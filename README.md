@@ -45,6 +45,8 @@
 * 【day031】[SearchRange-34. 在排序数组中查找元素的第一个和最后一个位置](./src/main/java/org/lql/leetcode/SearchRange.java)
 * 【day032】[MySqrt-69. Sqrt(x)](./src/main/java/org/lql/leetcode/MySqrt.java)
 * 【day033】[FindPeakElement-162. 寻找峰值](./src/main/java/org/lql/leetcode/FindPeakElement.java)
+* 【day034】[GuessNumber-374. 猜数字大小](./src/main/java/org/lql/leetcode/GuessNumber.java)
+* 【day035】[FindKthLargest-215. 数组中的第K个最大元素](./src/main/java/org/lql/leetcode/FindKthLargest.java)
 
 * [LeetCode](./src/main/java/org/lql/leetcode/LeetCode.md)
 
@@ -133,5 +135,15 @@
 * [ConvertBST-538. 把二叉搜索树转换为累加树](./src/main/java/org/lql/week04/ConvertBST.java)【已完成】
 * [Solve-130. 被围绕的区域](./src/main/java/org/lql/week04/Solve.java)【已完成】
 * [Twitter-355. 设计推特](./src/main/java/org/lql/week04/Twitter.java)【未完成】
+
+</details>
+<details>
+<summary>week05</summary>
+
+* [CountRangeSum-327. 区间和的个数](./src/main/java/org/lql/week05/CountRangeSum.java)【未完成】
+* [FindMin-154. 寻找旋转排序数组中的最小值 II](./src/main/java/org/lql/week05/FindMin.java)【已完成】
+* [MinEatingSpeed-875. 爱吃香蕉的珂珂](./src/main/java/org/lql/week05/MinEatingSpeed.java)【已完成】
+* [ShipWithinDays-1011. 在 D 天内送达包裹的能力](./src/main/java/org/lql/week05/ShipWithinDays.java)【已完成】
+* [TopVotedCandidate-911. 在线选举](./src/main/java/org/lql/week05/TopVotedCandidate.java)【未完成】
 
 </details>
