@@ -151,3 +151,11 @@
 * [TopVotedCandidate-911. 在线选举](./src/main/java/org/lql/week05/TopVotedCandidate.java)【未完成】
 
 </details>
+<details>
+<summary>week06</summary>
+
+* [ClimbStairs-70. 爬楼梯](./src/main/java/org/lql/week06/ClimbStairs.java)【未完成】
+* [FindNumberOfLIS-673. 最长递增子序列的个数](./src/main/java/org/lql/week06/FindNumberOfLIS.java)【未完成】
+* [MinimumTotal-120. 三角形最小路径和](./src/main/java/org/lql/week06/MinimumTotal.java)【未完成】
+
+</details>
