@@ -31,7 +31,7 @@ public class FindSubstring {
      * s 由小写英文字母组成
      * 1 <= words.length <= 5000
      * 1 <= words[i].length <= 30
-     * words[i] 由小写英文字母组成
+     * words[i]由小写英文字母组成
      */
 
     Map<String, Integer> wordsMap = new HashMap<>();
