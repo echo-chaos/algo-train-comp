@@ -8,7 +8,7 @@ package org.lql.practice.week06;
 public class UniquePathsWithObstacles {
 
     /**
-     * 一个机器人位于一个 m x n 网格的左上角 （起始点在下图中标记为 “Start” ）。
+     * 一个机器人位于一个m x n网格的左上角 （起始点在下图中标记为 “Start” ）。
      * <p>
      * 机器人每次只能向下或者向右移动一步。机器人试图达到网格的右下角（在下图中标记为 “Finish”）。
      * <p>
@@ -16,8 +16,8 @@ public class UniquePathsWithObstacles {
      * <p>
      * 网格中的障碍物和空位置分别用 1 和 0 来表示。
      * <p>
-     * m == obstacleGrid.length
-     * n == obstacleGrid[i].length
+     * m ==obstacleGrid.length
+     * n ==obstacleGrid[i].length
      * 1 <= m, n <= 100
      * obstacleGrid[i][j] 为 0 或 1
      */

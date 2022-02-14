@@ -1,8 +1,8 @@
-package org.lql.practice.week06;
+package org.lql.leetcode;
 
 /**
  * @author: lql
- * @date: 2022/2/13 22:15
+ * @date: 2022/2/14 10:09
  * @description: 300. 最长递增子序列 https://leetcode-cn.com/problems/longest-increasing-subsequence/
  */
 public class LengthOfLIS {
