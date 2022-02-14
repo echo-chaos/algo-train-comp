@@ -52,6 +52,9 @@
 * 【day038】2.9[CoinChange-322. 零钱兑换](./src/main/java/org/lql/leetcode/CoinChange.java)
 * 【day039】2.10[MaxProfit-122. 买卖股票的最佳时机 II](./src/main/java/org/lql/leetcode/MaxProfit.java)
 * 【day040】2.11[Jump-45. 跳跃游戏 II](./src/main/java/org/lql/leetcode/Jump.java)
+* 【day041】2.12[CoinChange-322. 零钱兑换](./src/main/java/org/lql/leetcode/CoinChange.java)
+* 【day042】2.13[MaxSubArray-53. 最大子数组和](./src/main/java/org/lql/leetcode/MaxSubArray.java)
+* 【day043】2.14[LengthOfLIS-300. 最长递增子序列](./src/main/java/org/lql/leetcode/LengthOfLIS.java)
 
 * [LeetCode](./src/main/java/org/lql/leetcode/LeetCode.md)
 
@@ -222,7 +225,7 @@
 <details>
 <summary>week06</summary>
 
-* [ClimbStairs-70. 爬楼梯](./src/main/java/org/lql/week06/ClimbStairs.java)【未完成】
+* [ClimbStairs-70. 爬楼梯](./src/main/java/org/lql/week06/ClimbStairs.java)【已完成】
 * [FindNumberOfLIS-673. 最长递增子序列的个数](./src/main/java/org/lql/week06/FindNumberOfLIS.java)【未完成】
 * [MinimumTotal-120. 三角形最小路径和](./src/main/java/org/lql/week06/MinimumTotal.java)【未完成】
 

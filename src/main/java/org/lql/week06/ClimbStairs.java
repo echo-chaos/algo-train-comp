@@ -1,6 +1,5 @@
 package org.lql.week06;
 
-import org.lql.week05.CountRangeSum;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -20,16 +19,30 @@ public class ClimbStairs {
      */
     private static final Logger logger = LoggerFactory.getLogger(ClimbStairs.class);
 
+    /**
+     *  f(n) = f(n-1) + f(n-2)
+     *  [1,2,3,...n-2,n-1,n]
+     *             q   p  r
+     *   ->->->->->->->->->
+     *  q -> p
+     *  p -> r
+     *  r -> p + q
+     */
     public int climbStairs(int n) {
-        if (n == 1) {
-            return 1;
+        int p = 0;
+        int q = 0;
+        int r = 1;
+        for (int i = 1; i <= n; i++) {
+            q = p;
+            p = r;
+            r = p + q;
         }
-        int[] cache = new int[n + 1];
-        cache[1] = 1;
-        cache[2] = 2;
-        for (int i = 3; i <= n; i++) {
-            cache[i] = cache[i - 1] + cache[i - 2];
-        }
-        return cache[n];
+        return r;
+    }
+
+    public static void main(String[] args) {
+        ClimbStairs climbStairs = new ClimbStairs();
+        int i = climbStairs.climbStairs(4);
+        System.out.println(i);
     }
 }
