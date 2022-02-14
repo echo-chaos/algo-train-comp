@@ -17,6 +17,29 @@ public class LengthOfLIS {
      * -104 <= nums[i] <= 104
      */
     public int lengthOfLIS(int[] nums) {
-        return 0;
+        int n = nums.length;
+        int[] f = new int[n];
+        for (int i = 0; i < n; i++) {
+            f[i] = 1;
+        }
+        for (int i = 1; i < n; i++) {
+            for (int j = 0; j < i; j++) {
+                if (nums[j] < nums[i]) {
+                    f[i] = Math.max(f[i], f[j] + 1);
+                }
+            }
+        }
+        int ans = 0;
+        for (int i = 0; i < n; i++) {
+            ans = Math.max(ans, f[i]);
+        }
+        return ans;
+    }
+
+    public static void main(String[] args) {
+        LengthOfLIS lengthOfLIS = new LengthOfLIS();
+        int[] nums = {10, 9, 2, 5, 3, 7, 101, 18};
+        int i = lengthOfLIS.lengthOfLIS(nums);
+        System.out.println(i);
     }
 }
