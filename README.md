@@ -153,13 +153,13 @@
 * [==========week-006==========]
 
 * [CoinChange-322. 零钱兑换](./src/main/java/org/lql/practice/week06/CoinChange.java)【待完成】
-* [FindContentChildren-455. 分发饼干](./src/main/java/org/lql/practice/week06/FindContentChildren.java)【待完成】
-* [Jump-45. 跳跃游戏 II](./src/main/java/org/lql/practice/week06/Jump.java)【待完成】
-* [LemonadeChange-860. 柠檬水找零](./src/main/java/org/lql/practice/week06/LemonadeChange.java)【待完成】
+* [FindContentChildren-455. 分发饼干](./src/main/java/org/lql/practice/week06/FindContentChildren.java)【已完成】
+* [Jump-45. 跳跃游戏 II](./src/main/java/org/lql/practice/week06/Jump.java)【已完成】
+* [LemonadeChange-860. 柠檬水找零](./src/main/java/org/lql/practice/week06/LemonadeChange.java)【已完成】
 * [LengthOfLIS-300. 最长递增子序列](./src/main/java/org/lql/practice/week06/LengthOfLIS.java)【待完成】
 * [LongestCommonSubsequence-1143. 最长公共子序列](./src/main/java/org/lql/practice/week06/LongestCommonSubsequence.java)【待完成】
 * [MaxProduct-152. 乘积最大子数组](./src/main/java/org/lql/practice/week06/MaxProduct.java)【待完成】
-* [MaxProfit-122. 买卖股票的最佳时机 II](./src/main/java/org/lql/practice/week06/MaxProfit.java)【待完成】
+* [MaxProfit-122. 买卖股票的最佳时机 II](./src/main/java/org/lql/practice/week06/MaxProfit.java)【已完成】
 * [MaxSubArray-53. 最大子数组和](./src/main/java/org/lql/practice/week06/MaxSubArray.java)【待完成】
 * [MinimumEffort-1665. 完成所有任务的最少初始能量](./src/main/java/org/lql/practice/week06/MinimumEffort.java)【待完成】
 * [UniquePathsWithObstacles-63. 不同路径 II](./src/main/java/org/lql/practice/week06/UniquePathsWithObstacles.java)【待完成】

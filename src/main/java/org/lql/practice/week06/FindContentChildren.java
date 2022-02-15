@@ -1,5 +1,7 @@
 package org.lql.practice.week06;
 
+import java.util.Arrays;
+
 /**
  * @author: lql
  * @date: 2022/2/13 22:06
@@ -21,7 +23,30 @@ public class FindContentChildren {
      * 1 <= g[i], s[j] <= 231 - 1
      */
     public int findContentChildren(int[] g, int[] s) {
+        int ans = 0;
+        // 排序孩子的胃口以及饼干的尺寸
+        Arrays.sort(g);
+        Arrays.sort(s);
+        int j = 0;
+        for (int child : g) {
+            // 根据孩子的胃口寻找与胃口相近的饼干尺寸
+            while (j < s.length && s[j] < child) {
+                j++;
+            }
+            // 因为孩子的胃口以及饼干的尺寸已经经过排序，所以
+            if (j < s.length) {
+                ans++;
+                j++;
+            }
+        }
+        return ans;
+    }
 
-        return 0;
+    public static void main(String[] args) {
+        FindContentChildren findContentChildren = new FindContentChildren();
+        int[] g = {1, 2, 3, 5};
+        int[] s = {1, 4, 1, 3};
+        int contentChildren = findContentChildren.findContentChildren(g, s);
+        System.out.println(contentChildren);
     }
 }

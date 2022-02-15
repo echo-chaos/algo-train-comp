@@ -1,5 +1,8 @@
 package org.lql.practice.week06;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * @author: lql
  * @date: 2022/2/13 21:38
@@ -22,7 +25,38 @@ public class LemonadeChange {
      * 1 <= bills.length <= 105
      * bills[i] 不是 5 就是 10 或是 20
      */
+
+    // 零钱数量
+    private Map<Integer, Integer> coins = new HashMap<>();
+
     public boolean lemonadeChange(int[] bills) {
-        return false;
+        coins.put(5, 0);
+        coins.put(10, 0);
+        coins.put(20, 0);
+        for (int bill : bills) {
+            coins.put(bill, coins.get(bill) + 1);
+            if (!exchange(bill - 5)) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    private boolean exchange(int amount) {
+        for (int x : new int[]{20, 10, 5}) {
+            // 零钱中有x面额的钱时，便优先找零，直到找完所有零钱，是否能满足找零
+            while (amount >= x && coins.get(x) > 0) {
+                amount -= x;
+                coins.put(x, coins.get(x) - 1);
+            }
+        }
+        return amount == 0;
+    }
+
+    public static void main(String[] args) {
+        LemonadeChange lemonadeChange = new LemonadeChange();
+        int[] bills = {5, 5, 5, 10, 20};
+        boolean b = lemonadeChange.lemonadeChange(bills);
+        System.out.println(b);
     }
 }
