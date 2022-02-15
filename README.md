@@ -55,6 +55,7 @@
 * 【day041】2.12[CoinChange-322. 零钱兑换](./src/main/java/org/lql/leetcode/CoinChange.java)
 * 【day042】2.13[MaxSubArray-53. 最大子数组和](./src/main/java/org/lql/leetcode/MaxSubArray.java)
 * 【day043】2.14[LengthOfLIS-300. 最长递增子序列](./src/main/java/org/lql/leetcode/LengthOfLIS.java)
+* 【day044】2.15[MaxProduct-152. 乘积最大子数组](./src/main/java/org/lql/leetcode/MaxProduct.java)
 
 * [LeetCode](./src/main/java/org/lql/leetcode/LeetCode.md)
 
