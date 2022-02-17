@@ -3,6 +3,8 @@ package org.lql.week06;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.Arrays;
+
 /**
  * @author: lql
  * @date: 2022/2/10 23:30
@@ -21,7 +23,48 @@ public class FindNumberOfLIS {
     private static final Logger logger = LoggerFactory.getLogger(FindNumberOfLIS.class);
 
     public int findNumberOfLIS(int[] nums) {
+        if (nums.length == 0) {
+            return 0;
+        }
+        int n = nums.length;
+        // dp-> 最长增长子序长度
+        int[] dp = new int[n];
+        // cnt -> dp对应子序个数
+        int[] cnt = new int[n];
+        // 最大长度
+        int maxLen = 0;
+        int ans = 0;
+        for (int i = 0; i < n; i++) {
+            dp[i] = cnt[i] = 1;
+            for (int j = 0; j < i; j++) {
+                if (nums[i] > nums[j]) {
+                    // 没找着，更新dp长度更新，cnt计数为上一个长度
+                    if (dp[i] < dp[j] + 1) {
+                        dp[i] = dp[j] + 1;
+                        cnt[i] = cnt[j];
+                        // 找到长度一致，cnt计数加上j
+                    } else if (dp[i] == dp[j] + 1) {
+                        cnt[i] += cnt[j];
+                    }
+                }
+            }
+            // 每次扫描完成一次，更新maxLen以及ans
+            if (dp[i] > maxLen) {
+                maxLen = dp[i];
+                ans = cnt[i];
+            } else if (dp[i] == maxLen) {
+                ans += cnt[i];
+            }
+        }
+        logger.info("dp  -> {}", Arrays.toString(dp));
+        logger.info("cnt -> {}", Arrays.toString(cnt));
+        return ans;
+    }
 
-        return 0;
+    public static void main(String[] args) {
+        FindNumberOfLIS lis = new FindNumberOfLIS();
+        int[] nums = {1, 3, 5, 4, 7};
+        int ans = lis.findNumberOfLIS(nums);
+        logger.info("ans -> {}", ans);
     }
 }
