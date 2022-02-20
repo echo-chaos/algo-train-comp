@@ -172,6 +172,23 @@
 
 * [==========week-007==========]
 
+* [CanPartition-416. 分割等和子集](./src/main/java/org/lql/practice/week07/CanPartition.java)【待完成】
+* [CoinChangeII-518. 零钱兑换 II](./src/main/java/org/lql/practice/week07/CoinChangeII.java)【待完成】
+* [FindMaxValueOfEquation-1499. 满足不等式的最大值](./src/main/java/org/lql/practice/week07/FindMaxValueOfEquation.java)【待完成】
+* [MaxCoins-312. 戳气球](./src/main/java/org/lql/practice/week07/MaxCoins.java)【待完成】
+* [MaxProfitI-121. 买卖股票的最佳时机](./src/main/java/org/lql/practice/week07/MaxProfitI.java)【待完成】
+* [MaxProfitII-122. 买卖股票的最佳时机 II](./src/main/java/org/lql/practice/week07/MaxProfitII.java)【待完成】
+* [MaxProfitIII-123. 买卖股票的最佳时机 III](./src/main/java/org/lql/practice/week07/MaxProfitIII.java)【待完成】
+* [MaxProfitIV-188. 买卖股票的最佳时机 IV](./src/main/java/org/lql/practice/week07/MaxProfitIV.java)【待完成】
+* [MaxProfitV-714. 买卖股票的最佳时机含手续费](./src/main/java/org/lql/practice/week07/MaxProfitV.java)【待完成】
+* [MaxProfitVI-09. 最佳买卖股票时机含冷冻期](./src/main/java/org/lql/practice/week07/MaxProfitVI.java)【待完成】
+* [MaxSubarraySumCircular-918. 环形子数组的最大和 ](./src/main/java/org/lql/practice/week07/MaxSubarraySumCircular.java)【待完成】
+* [MergeStones-1000. 合并石头的最低成本](./src/main/java/org/lql/practice/week07/MergeStones.java)【待完成】
+* [MinDistance-72. 编辑距离 ](./src/main/java/org/lql/practice/week07/MinDistance.java)【待完成】
+* [RobI-198. 打家劫舍](./src/main/java/org/lql/practice/week07/RobI.java)【待完成】
+* [RobII-213. 打家劫舍 II](./src/main/java/org/lql/practice/week07/RobII.java)【待完成】
+* [RobIII-337. 打家劫舍 III](./src/main/java/org/lql/practice/week07/RobIII.java)【待完成】
+
 
 * [==========week-008==========]
 
@@ -234,5 +251,16 @@
 * [ClimbStairs-70. 爬楼梯](./src/main/java/org/lql/week06/ClimbStairs.java)【已完成】
 * [FindNumberOfLIS-673. 最长递增子序列的个数](./src/main/java/org/lql/week06/FindNumberOfLIS.java)【已完成】
 * [MinimumTotal-120. 三角形最小路径和](./src/main/java/org/lql/week06/MinimumTotal.java)【已完成】
+
+</details>
+
+<details>
+<summary>week06</summary>
+
+* [CanJump-55. 跳跃游戏](./src/main/java/org/lql/week07/CanJump.java)【未完成】
+* [Jump-45. 跳跃游戏 II](./src/main/java/org/lql/week07/Jump.java)【未完成】
+* [LongestPalindromeSubseq-516. 最长回文子序列](./src/main/java/org/lql/week07/LongestPalindromeSubseq.java)【未完成】
+* [MaxPathSum-124. 二叉树中的最大路径和](./src/main/java/org/lql/week07/MaxPathSum.java)【未完成】
+* [NumSquares-279. 完全平方数](./src/main/java/org/lql/week07/NumSquares.java)【未完成】
 
 </details>
