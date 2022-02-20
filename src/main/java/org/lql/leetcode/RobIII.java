@@ -43,4 +43,12 @@ public class RobIII {
         f.put(node, node.val + g.getOrDefault(node.left, 0) + g.getOrDefault(node.right, 0));
         g.put(node, Math.max(f.getOrDefault(node.left, 0), g.getOrDefault(node.left, 0)) + Math.max(f.getOrDefault(node.right, 0), g.getOrDefault(node.right, 0)));
     }
+
+    public static void main(String[] args) {
+        RobIII rob = new RobIII();
+        // 3,2,3,null,3,null,1
+        TreeNode root = new TreeNode(3, new TreeNode(2, null, new TreeNode(3)), new TreeNode(3, null, new TreeNode(1)));
+        int i = rob.rob(root);
+        System.out.println(i);
+    }
 }
