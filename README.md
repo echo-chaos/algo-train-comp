@@ -61,6 +61,7 @@
 * 【day047】2.18[Rob-198. 打家劫舍](./src/main/java/org/lql/leetcode/Rob.java)
 * 【day048】2.19[MinDistance-72. 编辑距离](./src/main/java/org/lql/leetcode/MinDistance.java)
 * 【day049】2.20[RobIII-337. 打家劫舍 III](./src/main/java/org/lql/leetcode/RobIII.java)
+* 【day050】2.21[CoinChangeII-518. 零钱兑换 II](./src/main/java/org/lql/leetcode/CoinChangeII.java)
 
 * [LeetCode](./src/main/java/org/lql/leetcode/LeetCode.md)
 
@@ -255,7 +256,7 @@
 </details>
 
 <details>
-<summary>week06</summary>
+<summary>week07</summary>
 
 * [CanJump-55. 跳跃游戏](./src/main/java/org/lql/week07/CanJump.java)【未完成】
 * [Jump-45. 跳跃游戏 II](./src/main/java/org/lql/week07/Jump.java)【未完成】
