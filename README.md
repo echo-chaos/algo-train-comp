@@ -62,6 +62,7 @@
 * 【day048】2.19[MinDistance-72. 编辑距离](./src/main/java/org/lql/leetcode/MinDistance.java)
 * 【day049】2.20[RobIII-337. 打家劫舍 III](./src/main/java/org/lql/leetcode/RobIII.java)
 * 【day050】2.21[CoinChangeII-518. 零钱兑换 II](./src/main/java/org/lql/leetcode/CoinChangeII.java)
+* 【day051】2.22[Trie-208. 实现 Trie (前缀树)](./src/main/java/org/lql/leetcode/Trie.java)
 
 * [LeetCode](./src/main/java/org/lql/leetcode/LeetCode.md)
 
