@@ -65,6 +65,7 @@
 * 【day051】2.22[Trie-208. 实现 Trie (前缀树)](./src/main/java/org/lql/leetcode/Trie.java)
 * 【day052】2.23[SuperMarket-超市](./src/main/java/org/lql/leetcode/SuperMarket.java)
 * 【day052】2.23[Main-超市](./src/main/java/org/lql/leetcode/Main.java)
+* 【day053】2.24[FindCircleNum-547. 省份数量](./src/main/java/org/lql/leetcode/FindCircleNum.java)
 
 * [LeetCode](./src/main/java/org/lql/leetcode/LeetCode.md)
 
