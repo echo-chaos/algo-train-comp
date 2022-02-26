@@ -21,6 +21,27 @@ public class LongestPalindromeSubseq {
     private static final Logger logger = LoggerFactory.getLogger(LongestPalindromeSubseq.class);
 
     public int longestPalindromeSubseq(String s) {
-        return 0;
+        int n = s.length();
+        int[][] dp = new int[n][n];
+        for (int i = n - 1; i >= 0; i--) {
+            // 最小的回文字串
+            dp[i][i] = 1;
+            for (int j = i + 1; j < n; j++) {
+                if (s.charAt(i) == s.charAt(j)) {
+                    // 相等、[i+1,j-1]是当前遍历到的范围内最长回文字串，再和尚头尾的i、更新长度
+                    dp[i][j] = dp[i + 1][j - 1] + 2;
+                } else {
+                    // 不等、那就取两边最大的那个
+                    dp[i][j] = Math.max(dp[i + 1][j], dp[i][j - 1]);
+                }
+            }
+        }
+        return dp[0][n - 1];
+    }
+
+    public static void main(String[] args) {
+        LongestPalindromeSubseq longestPalindromeSubseq = new LongestPalindromeSubseq();
+        int cbbd = longestPalindromeSubseq.longestPalindromeSubseq("cbbd");
+        System.out.println(cbbd);
     }
 }
