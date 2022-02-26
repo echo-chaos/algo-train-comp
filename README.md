@@ -264,7 +264,7 @@
 
 * [CanJump-55. 跳跃游戏](./src/main/java/org/lql/week07/CanJump.java)【已完成】
 * [Jump-45. 跳跃游戏 II](./src/main/java/org/lql/week07/Jump.java)【已完成】
-* [LongestPalindromeSubseq-516. 最长回文子序列](./src/main/java/org/lql/week07/LongestPalindromeSubseq.java)【待完成】
+* [LongestPalindromeSubseq-516. 最长回文子序列](./src/main/java/org/lql/week07/LongestPalindromeSubseq.java)【已完成】
 * [MaxPathSum-124. 二叉树中的最大路径和](./src/main/java/org/lql/week07/MaxPathSum.java)【待完成】
 * [NumSquares-279. 完全平方数](./src/main/java/org/lql/week07/NumSquares.java)【已完成】
 
