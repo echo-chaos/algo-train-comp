@@ -23,6 +23,23 @@ public class CanJump {
     private static final Logger logger = LoggerFactory.getLogger(CanJump.class);
 
     public boolean canJump(int[] nums) {
-        return false;
+        boolean[] dp = new boolean[nums.length];
+        dp[0] = true;
+        for (int i = 1; i < nums.length; i++) {
+            for (int j = 0; j < i; j++) {
+                if (dp[j] && nums[j] + j >= i) {
+                    dp[i] = true;
+                    break;
+                }
+            }
+        }
+        return dp[nums.length - 1];
+    }
+
+    public static void main(String[] args) {
+        int[] nums = {2,3,1,1,4};
+        CanJump jump = new CanJump();
+        boolean b = jump.canJump(nums);
+        System.out.println(b);
     }
 }
