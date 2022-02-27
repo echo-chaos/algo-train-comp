@@ -210,7 +210,25 @@
 * [SuperMarket-145. 超市](./src/main/java/org/lql/practice/week08/SuperMarket.java)【待完成】
 * [Trie-208. 实现 Trie (前缀树)](./src/main/java/org/lql/practice/week08/Trie.java)【待完成】
 
+
 * [==========week-009==========]
+
+* [EightDigitI-45. 八数码](./src/main/java/org/lql/practice/week09/EightDigitI.java)【待完成】
+* [EightDigitII-179. 八数码](./src/main/java/org/lql/practice/week09/EightDigitII.java)【待完成】
+* [GenerateParenthesis-22. 括号生成](./src/main/java/org/lql/practice/week09/GenerateParenthesis.java)【待完成】
+* [IsMatch-10. 正则表达式匹配](./src/main/java/org/lql/practice/week09/IsMatch.java)【待完成】
+* [IsPalindrome-125. 验证回文串](./src/main/java/org/lql/practice/week09/IsPalindrome.java)【待完成】
+* [IsValidSudoku-36. 有效的数独](./src/main/java/org/lql/practice/week09/IsValidSudoku.java)【待完成】
+* [LadderLength-127. 单词接龙](./src/main/java/org/lql/practice/week09/LadderLength.java)【待完成】
+* [LongestPalindrome-5. 最长回文子串](./src/main/java/org/lql/practice/week09/LongestPalindrome.java)【待完成】
+* [MyAtoi-8. 字符串转换整数 (atoi)](./src/main/java/org/lql/practice/week09/MyAtoi.java)【待完成】
+* [NumDistinct-115. 不同的子序列](./src/main/java/org/lql/practice/week09/NumDistinct.java)【待完成】
+* [RepeatedStringMatch-686. 重复叠加字符串匹配](./src/main/java/org/lql/practice/week09/RepeatedStringMatch.java)【待完成】
+* [SlidingPuzzle-73. 滑动谜题](./src/main/java/org/lql/practice/week09/SlidingPuzzle.java)【待完成】
+* [SolveNQueens-51. N 皇后](./src/main/java/org/lql/practice/week09/SolveNQueens.java)【待完成】
+* [SolveSudoku-37. 解数独](./src/main/java/org/lql/practice/week09/SolveSudoku.java)【待完成】
+* [StrStr-28. 实现 strStr()](./src/main/java/org/lql/practice/week09/StrStr.java)【待完成】
+* [ValidPalindrome-680. 验证回文字符串 Ⅱ](./src/main/java/org/lql/practice/week09/ValidPalindrome.java)【待完成】
 
 
 * [==========week-010==========]
