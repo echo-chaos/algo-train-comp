@@ -200,6 +200,15 @@
 
 * [==========week-008==========]
 
+* [Dijkstra-850. Dijkstra求最短路 II](./src/main/java/org/lql/practice/week08/Dijkstra.java)【待完成】
+* [FindCircleNum-547. 省份数量](./src/main/java/org/lql/practice/week08/FindCircleNum.java)【待完成】
+* [FindTheCity-FindTheCity](./src/main/java/org/lql/practice/week08/FindTheCity.java)【待完成】
+* [FindWords-212. 单词搜索 II](./src/main/java/org/lql/practice/week08/FindWords.java)【待完成】
+* [MinCostConnectPoints-1584. 连接所有点的最小费用](./src/main/java/org/lql/practice/week08/MinCostConnectPoints.java)【待完成】
+* [NetworkDelayTime-743. 网络延迟时间](./src/main/java/org/lql/practice/week08/NetworkDelayTime.java)【待完成】
+* [Solve-130. 被围绕的区域](./src/main/java/org/lql/practice/week08/Solve.java)【待完成】
+* [SuperMarket-145. 超市](./src/main/java/org/lql/practice/week08/SuperMarket.java)【待完成】
+* [Trie-208. 实现 Trie (前缀树)](./src/main/java/org/lql/practice/week08/Trie.java)【待完成】
 
 * [==========week-009==========]
 
