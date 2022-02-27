@@ -272,3 +272,11 @@
 * [NumSquares-279. 完全平方数](./src/main/java/org/lql/week07/NumSquares.java)【已完成】
 
 </details>
+
+<details>
+<summary>week08</summary>
+
+* [FindRedundantConnection-684. 冗余连接](./src/main/java/org/lql/week08/FindRedundantConnection.java)【待完成】
+* [NumIslands-200. 岛屿数量](./src/main/java/org/lql/week08/NumIslands.java)【待完成】
+
+</details>
