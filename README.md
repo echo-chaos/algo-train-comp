@@ -289,3 +289,23 @@
 * [NumIslands-200. 岛屿数量](./src/main/java/org/lql/week08/NumIslands.java)【待完成】
 
 </details>
+
+<details>
+<summary>week09</summary>
+
+* [FindAnagrams-438. 找到字符串中所有字母异位词](./src/main/java/org/lql/week09/FindAnagrams.java)【待完成】
+* [FirstUniqChar-387. 字符串中的第一个唯一字符](./src/main/java/org/lql/week09/FirstUniqChar.java)【待完成】
+* [GroupAnagrams-49. 字母异位词分组](./src/main/java/org/lql/week09/GroupAnagrams.java)【待完成】
+* [IsAnagram-242. 有效的字母异位词](./src/main/java/org/lql/week09/IsAnagram.java)【待完成】
+* [IsIsomorphic-205. 同构字符串](./src/main/java/org/lql/week09/IsIsomorphic.java)【待完成】
+* [IsMatch-44. 通配符匹配](./src/main/java/org/lql/week09/IsMatch.java)【待完成】
+* [LengthOfLastWord-58. 最后一个单词的长度](./src/main/java/org/lql/week09/LengthOfLastWord.java)【待完成】
+* [LongestCommonPrefix-14. 最长公共前缀](./src/main/java/org/lql/week09/LongestCommonPrefix.java)【待完成】
+* [NumJewelsInStones-771. 宝石与石头](./src/main/java/org/lql/week09/NumJewelsInStones.java)【待完成】
+* [ReverseOnlyLetters-917. 仅仅反转字母](./src/main/java/org/lql/week09/ReverseOnlyLetters.java)【待完成】
+* [ReverseString-344. 反转字符串](./src/main/java/org/lql/week09/ReverseString.java)【待完成】
+* [ReverseWords-151. 翻转字符串里的单词](./src/main/java/org/lql/week09/ReverseWords.java)【待完成】
+* [ShortestPathBinaryMatrix-1091. 二进制矩阵中的最短路径](./src/main/java/org/lql/week09/ShortestPathBinaryMatrix.java)【待完成】
+* [ToLowerCase-709. 转换成小写字母](./src/main/java/org/lql/week09/ToLowerCase.java)【待完成】
+
+</details>
