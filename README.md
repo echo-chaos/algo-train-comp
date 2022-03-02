@@ -69,6 +69,9 @@
 * 【day054】2.25[FindTheCity-1334. 阈值距离内邻居最少的城市](./src/main/java/org/lql/leetcode/FindTheCity.java)
 * 【day055】2.26[Dijkstra-850. Dijkstra求最短路 II](./src/main/java/org/lql/leetcode/Dijkstra.java)
 * 【day056】2.27[NeighborSearch-136. 邻值查找](./src/main/java/org/lql/leetcode/NeighborSearch.java)
+* 【day057】2.28[MinCostConnectPoints-1584. 连接所有点的最小费用](./src/main/java/org/lql/leetcode/MinCostConnectPoints.java)
+* 【day058】3.01[MyAtoi-8. 字符串转换整数 (atoi)](./src/main/java/org/lql/leetcode/MyAtoi.java)
+* 【day059】3.02[StrStr-28. 实现 strStr()](./src/main/java/org/lql/leetcode/StrStr.java)
 
 * [LeetCode](./src/main/java/org/lql/leetcode/LeetCode.md)
 
