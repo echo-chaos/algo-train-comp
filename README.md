@@ -72,6 +72,7 @@
 * 【day057】2.28[MinCostConnectPoints-1584. 连接所有点的最小费用](./src/main/java/org/lql/leetcode/MinCostConnectPoints.java)
 * 【day058】3.01[MyAtoi-8. 字符串转换整数 (atoi)](./src/main/java/org/lql/leetcode/MyAtoi.java)
 * 【day059】3.02[StrStr-28. 实现 strStr()](./src/main/java/org/lql/leetcode/StrStr.java)
+* 【day060】3.03[IsPalindrome-2125. 验证回文串](./src/main/java/org/lql/leetcode/IsPalindrome.java)
 
 * [LeetCode](./src/main/java/org/lql/leetcode/LeetCode.md)
 
