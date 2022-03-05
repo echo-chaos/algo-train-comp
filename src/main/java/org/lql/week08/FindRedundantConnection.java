@@ -1,8 +1,9 @@
 package org.lql.week08;
 
-import org.lql.week07.CanJump;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.Arrays;
 
 /**
  * @author: lql
@@ -30,8 +31,43 @@ public class FindRedundantConnection {
      */
     private static final Logger logger = LoggerFactory.getLogger(FindRedundantConnection.class);
 
-    public int[] findRedundantConnection(int[][] edges) {
+    int[] fa;
 
-        return new int[]{};
+    private int find(int x) {
+        if (fa[x] == x) {
+            return x;
+        }
+        return fa[x] = find(fa[x]);
+    }
+
+    private boolean unionSet(int x, int y) {
+        x = find(x);
+        y = find(y);
+        if (x != y) {
+            fa[x] = y;
+            return true;
+        }
+        return false;
+    }
+
+    public int[] findRedundantConnection(int[][] edges) {
+        int n = edges.length + 1;
+        fa = new int[n];
+        for (int i = 0; i < n; i++) {
+            fa[i] = i;
+        }
+        for (int[] edge : edges) {
+            if (!unionSet(edge[0], edge[1])) {
+                return edge;
+            }
+        }
+        return new int[0];
+    }
+
+    public static void main(String[] args) {
+        FindRedundantConnection connection = new FindRedundantConnection();
+        int[][] edges = {{1, 2}, {1, 3}, {2, 3}};
+        int[] redundantConnection = connection.findRedundantConnection(edges);
+        System.out.println(Arrays.toString(redundantConnection));
     }
 }
