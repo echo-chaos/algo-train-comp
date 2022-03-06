@@ -73,6 +73,9 @@
 * 【day058】3.01[MyAtoi-8. 字符串转换整数 (atoi)](./src/main/java/org/lql/leetcode/MyAtoi.java)
 * 【day059】3.02[StrStr-28. 实现 strStr()](./src/main/java/org/lql/leetcode/StrStr.java)
 * 【day060】3.03[IsPalindrome-2125. 验证回文串](./src/main/java/org/lql/leetcode/IsPalindrome.java)
+* 【day061】3.04[ValidPalindrome-680. 验证回文字符串 Ⅱ](./src/main/java/org/lql/leetcode/ValidPalindrome.java)
+* 【day062】3.05[LongestPalindrome-5. 最长回文子串](./src/main/java/org/lql/leetcode/LongestPalindrome.java)
+* 【day063】3.06[EightDigit-845. 八数码](./src/main/java/org/lql/leetcode/EightDigit.java)
 
 * [LeetCode](./src/main/java/org/lql/leetcode/LeetCode.md)
 
