@@ -1,5 +1,8 @@
 package org.lql.week09;
 
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * @author: lql
  * @date: 2022/2/28 1:50 AM
@@ -18,6 +21,24 @@ public class NumJewelsInStones {
      * jewels 中的所有字符都是 唯一的
      */
     public int numJewelsInStones(String jewels, String stones) {
-        return 0;
+        int ans = 0;
+        Set<Character> jewelsSet = new HashSet<Character>();
+        for (int i = 0; i < jewels.length(); i++) {
+            char jewel = jewels.charAt(i);
+            jewelsSet.add(jewel);
+        }
+        for (int i = 0; i < stones.length(); i++) {
+            char stone = stones.charAt(i);
+            if (jewelsSet.contains(stone)) {
+                ans++;
+            }
+        }
+        return ans;
+    }
+
+    public static void main(String[] args) {
+        NumJewelsInStones stones = new NumJewelsInStones();
+        int i = stones.numJewelsInStones("aA", "aAAbbbb");
+        System.out.println(i);
     }
 }

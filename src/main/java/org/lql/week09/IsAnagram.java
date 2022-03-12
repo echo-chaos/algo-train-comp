@@ -1,5 +1,8 @@
 package org.lql.week09;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * @author: lql
  * @date: 2022/2/28 1:57 AM
@@ -16,6 +19,30 @@ public class IsAnagram {
      * s 和 t 仅包含小写字母
      */
     public boolean isAnagram(String s, String t) {
-        return false;
+        // 长度不等便不是异位词
+        if (s.length() != t.length()){
+            return false;
+        }
+        // 记录s的词频
+        Map<Character, Integer> map = new HashMap<>(s.length());
+        for (Character c : s.toCharArray()) {
+            map.put(c, map.getOrDefault(c, 0) + 1);
+        }
+        // 比对t的词频
+        for (int i = 0; i < t.length(); i++) {
+            char c = t.charAt(i);
+            // 消消乐
+            map.put(c,map.getOrDefault(c,0)-1);
+            if (map.get(c) < 0){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static void main(String[] args) {
+        IsAnagram isAnagram = new IsAnagram();
+        boolean anagram = isAnagram.isAnagram("anagram", "nagaram");
+        System.out.println(anagram);
     }
 }

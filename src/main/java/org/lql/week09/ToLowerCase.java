@@ -12,8 +12,25 @@ public class ToLowerCase {
      * <p>
      * 1 <= s.length <= 100
      * s 由 ASCII 字符集中的可打印字符组成
+     *
+     * A - Z ~ [65,90]
+     * a - z ~ [97,122]
      */
     public String toLowerCase(String s) {
-        return "";
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < s.length(); ++i) {
+            char ch = s.charAt(i);
+            if (ch >= 'A' && ch <= 'Z') {
+                ch |= 32;
+            }
+            sb.append(ch);
+        }
+        return sb.toString();
+    }
+
+    public static void main(String[] args) {
+        ToLowerCase lowerCase = new ToLowerCase();
+        String lovely = lowerCase.toLowerCase("LOVELY");
+        System.out.println(lovely);
     }
 }

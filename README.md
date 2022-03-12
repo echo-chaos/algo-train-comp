@@ -76,6 +76,12 @@
 * 【day061】3.04[ValidPalindrome-680. 验证回文字符串 Ⅱ](./src/main/java/org/lql/leetcode/ValidPalindrome.java)
 * 【day062】3.05[LongestPalindrome-5. 最长回文子串](./src/main/java/org/lql/leetcode/LongestPalindrome.java)
 * 【day063】3.06[EightDigit-845. 八数码](./src/main/java/org/lql/leetcode/EightDigit.java)
+* 【day064】3.07[IsValidSudoku-36. 有效的数独](./src/main/java/org/lql/leetcode/IsValidSudoku.java)
+* 【day065】3.08[NumArray-307. 区域和检索 - 数组可修改](./src/main/java/org/lql/leetcode/NumArray.java)
+* 【day066】3.09[HammingWeight-191. 位1的个数](./src/main/java/org/lql/leetcode/HammingWeight.java)
+* 【day067】3.10[MyPowerI-50. Pow(x, n)](./src/main/java/org/lql/leetcode/MyPowerI.java)
+* 【day068】3.11[SolveNQueensI-51. N 皇后](./src/main/java/org/lql/leetcode/SolveNQueensI.java)
+* 【day069】3.12[GetSkyline-218. 天际线问题](./src/main/java/org/lql/leetcode/GetSkyline.java)
 
 * [LeetCode](./src/main/java/org/lql/leetcode/LeetCode.md)
 
@@ -318,19 +324,19 @@
 <details>
 <summary>week09</summary>
 
-* [FindAnagrams-438. 找到字符串中所有字母异位词](./src/main/java/org/lql/week09/FindAnagrams.java)【待完成】
-* [FirstUniqChar-387. 字符串中的第一个唯一字符](./src/main/java/org/lql/week09/FirstUniqChar.java)【待完成】
-* [GroupAnagrams-49. 字母异位词分组](./src/main/java/org/lql/week09/GroupAnagrams.java)【待完成】
-* [IsAnagram-242. 有效的字母异位词](./src/main/java/org/lql/week09/IsAnagram.java)【待完成】
+* [FindAnagrams-438. 找到字符串中所有字母异位词](./src/main/java/org/lql/week09/FindAnagrams.java)【已完成】
+* [FirstUniqChar-387. 字符串中的第一个唯一字符](./src/main/java/org/lql/week09/FirstUniqChar.java)【已完成】
+* [GroupAnagrams-49. 字母异位词分组](./src/main/java/org/lql/week09/GroupAnagrams.java)【已完成】
+* [IsAnagram-242. 有效的字母异位词](./src/main/java/org/lql/week09/IsAnagram.java)【已完成】
 * [IsIsomorphic-205. 同构字符串](./src/main/java/org/lql/week09/IsIsomorphic.java)【待完成】
 * [IsMatch-44. 通配符匹配](./src/main/java/org/lql/week09/IsMatch.java)【待完成】
 * [LengthOfLastWord-58. 最后一个单词的长度](./src/main/java/org/lql/week09/LengthOfLastWord.java)【待完成】
 * [LongestCommonPrefix-14. 最长公共前缀](./src/main/java/org/lql/week09/LongestCommonPrefix.java)【待完成】
-* [NumJewelsInStones-771. 宝石与石头](./src/main/java/org/lql/week09/NumJewelsInStones.java)【待完成】
+* [NumJewelsInStones-771. 宝石与石头](./src/main/java/org/lql/week09/NumJewelsInStones.java)【已完成】
 * [ReverseOnlyLetters-917. 仅仅反转字母](./src/main/java/org/lql/week09/ReverseOnlyLetters.java)【待完成】
 * [ReverseString-344. 反转字符串](./src/main/java/org/lql/week09/ReverseString.java)【待完成】
 * [ReverseWords-151. 翻转字符串里的单词](./src/main/java/org/lql/week09/ReverseWords.java)【待完成】
 * [ShortestPathBinaryMatrix-1091. 二进制矩阵中的最短路径](./src/main/java/org/lql/week09/ShortestPathBinaryMatrix.java)【待完成】
-* [ToLowerCase-709. 转换成小写字母](./src/main/java/org/lql/week09/ToLowerCase.java)【待完成】
+* [ToLowerCase-709. 转换成小写字母](./src/main/java/org/lql/week09/ToLowerCase.java)【已完成】
 
 </details>

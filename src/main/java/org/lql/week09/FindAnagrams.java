@@ -1,6 +1,8 @@
 package org.lql.week09;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -19,6 +21,42 @@ public class FindAnagrams {
      * s 和 p 仅包含小写字母
      */
     public List<Integer> findAnagrams(String s, String p) {
-        return new ArrayList<>();
+        int m = s.length();
+        int n = p.length();
+        if (m < n) {
+            return new ArrayList<>();
+        }
+        // s&p 的词频
+        int[] sCount = new int[26];
+        int[] pCount = new int[26];
+        for (int i = 0; i < n; i++) {
+            sCount[s.charAt(i) - 'a']++;
+            pCount[p.charAt(i) - 'a']++;
+        }
+        List<Integer> ans = new ArrayList<Integer>();
+        if (Arrays.equals(sCount, pCount)) {
+            ans.add(0);
+        }
+        /**
+         * s: cbaebabacd m [1,1,1,0,0,0,0,0,0,...]
+         * p: abc        n [1,1,1,0,0,0,0,0,0,...]
+         *      c b a e b a b a c d
+         * i:   0          m-n
+         * i+n:     n             i+n
+         */
+        for (int i = 0; i < m - n; i++) {
+            sCount[s.charAt(i) - 'a']--;
+            sCount[s.charAt(i + n) - 'a']++;
+            if (Arrays.equals(sCount, pCount)) {
+                ans.add(i + 1);
+            }
+        }
+        return ans;
+    }
+
+    public static void main(String[] args) {
+        FindAnagrams findAnagrams = new FindAnagrams();
+        List<Integer> anagrams = findAnagrams.findAnagrams("cbaebabacd", "abc");
+        System.out.println(Collections.unmodifiableList(anagrams));
     }
 }

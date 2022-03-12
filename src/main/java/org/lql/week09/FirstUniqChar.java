@@ -1,5 +1,8 @@
 package org.lql.week09;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * @author: lql
  * @date: 2022/2/28 1:52 AM
@@ -14,6 +17,21 @@ public class FirstUniqChar {
      * s 只包含小写字母
      */
     public int firstUniqChar(String s) {
-        return 0;
+        Map<Character, Integer> map = new HashMap<>(s.length());
+        for (Character c : s.toCharArray()) {
+            map.put(c, map.getOrDefault(c, 0) + 1);
+        }
+        for (int i = 0; i < s.length(); i++) {
+            if (map.get(s.charAt(i)) == 1) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+    public static void main(String[] args) {
+        FirstUniqChar firstUniqChar = new FirstUniqChar();
+        int leetcode = firstUniqChar.firstUniqChar("leetcode");
+        System.out.println(leetcode);
     }
 }
