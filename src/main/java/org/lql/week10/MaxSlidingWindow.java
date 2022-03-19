@@ -1,6 +1,8 @@
 package org.lql.week10;
 
 import java.util.Arrays;
+import java.util.Deque;
+import java.util.LinkedList;
 
 /**
  * @author: lql
@@ -20,8 +22,49 @@ public class MaxSlidingWindow {
      * -104 <= nums[i] <= 104
      * 1 <= k <= nums.length
      */
+    /**
+     * 1, 3, -1, -3, 5, 3, 6, 7 | 3
+     *
+     * 1 3 -1 -> 3 => 3
+     *
+     * 3 -1 -3 -> 3 => 3 3
+     *
+     * -1 -3 5 -> 5 => 3 3 5
+     *
+     * -3 5 3 -> 5 => 3 3 5 5
+     *
+     * 5 3 6 -> 6 => 3 3 5 5 6
+     *
+     * 3 6 7 -> 7 => 3 3 5 5 6 7
+     *
+     */
     public int[] maxSlidingWindow(int[] nums, int k) {
-        return new int[]{};
+        int n = nums.length;
+        Deque<Integer> deque = new LinkedList<Integer>();
+        for (int i = 0; i < k; ++i) {
+            // 队列不空 && 队尾元素小于新元素，舍弃队尾元素 -> 保持队列递减
+            while (!deque.isEmpty() && nums[i] >= nums[deque.peekLast()]) {
+                deque.pollLast();
+            }
+            deque.offerLast(i);
+        }
+        // n - k + 1 => 窗口在数组中所要滑动的次数
+        int[] ans = new int[n - k + 1];
+        ans[0] = nums[deque.peekFirst()];
+        for (int i = k; i < n; i++) {
+            // 队列不空 && 队尾元素小于新元素，舍弃队尾元素 -> 保持队列递减
+            while (!deque.isEmpty() && nums[i] >= nums[deque.peekLast()]) {
+                deque.pollLast();
+            }
+            deque.offerLast(i);
+            // 保证队列元素不超过k+1个
+            while (deque.peekFirst() <= i - k) {
+                deque.pollFirst();
+            }
+            // 取当前窗口最大值添加到答案中
+            ans[i - k + 1] = nums[deque.peekFirst()];
+        }
+        return ans;
     }
 
     public static void main(String[] args) {

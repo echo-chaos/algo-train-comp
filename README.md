@@ -369,7 +369,7 @@
 
 * [FallingSquares-699. 掉落的方块](./src/main/java/org/lql/week10/FallingSquares.java)【待完成】
 * [GeneralBalanceTree-253. 普通平衡树](./src/main/java/org/lql/week10/GeneralBalanceTree.java)【待完成】
-* [MaxSlidingWindow-239. 滑动窗口最大值](./src/main/java/org/lql/week10/MaxSlidingWindow.java)【待完成】
+* [MaxSlidingWindow-239. 滑动窗口最大值](./src/main/java/org/lql/week10/MaxSlidingWindow.java)【已完成】
 * [NeighborSearch-136. 邻值查找](./src/main/java/org/lql/week10/NeighborSearch.java)【待完成】
 * [Skiplist-1206. 设计跳表](./src/main/java/org/lql/week10/Skiplist.java)【待完成】
 
