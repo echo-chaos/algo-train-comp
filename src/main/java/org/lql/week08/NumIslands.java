@@ -3,6 +3,8 @@ package org.lql.week08;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.util.Arrays;
+
 /**
  * @author: lql
  * @date: 2022/2/28 1:27 AM
@@ -24,7 +26,49 @@ public class NumIslands {
      */
     private static final Logger logger = LoggerFactory.getLogger(NumIslands.class);
 
+    int ans;
+    int rowNum;
+    int colNum;
+    int[] fa;
+    int[] rank;
+
+    private int find(int x) {
+        if (fa[x] == x) {
+            return x;
+        }
+        return fa[x] = find(fa[x]);
+    }
+
     public int numIslands(char[][] grid) {
+        rowNum = grid.length;
+        colNum = grid[0].length;
+        init(grid);
         return 1;
+    }
+
+    public void init(char[][] grid) {
+        ans = 0;
+        fa = new int[rowNum * colNum];
+        rank = new int[rowNum * colNum];
+        for (int i = 0; i < rowNum; ++i) {
+            for (int j = 0; j < colNum; ++j) {
+                if (grid[i][j] == '1') {
+                    fa[i * colNum + j] = i * colNum + j;
+                    ++ans;
+                }
+                rank[i * colNum + j] = 0;
+            }
+        }
+        System.out.println(Arrays.toString(fa));
+    }
+
+    public static void main(String[] args) {
+        char[][] grid = {
+                {'1', '1', '1', '1', '0'},
+                {'1', '1', '0', '1', '0'},
+                {'1', '1', '0', '0', '0'},
+                {'0', '0', '0', '0', '0'}};
+        NumIslands islands = new NumIslands();
+        int i = islands.numIslands(grid);
     }
 }

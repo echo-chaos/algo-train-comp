@@ -8,6 +8,15 @@
 
 </details>
 
+<details>
+<summary>examination</summary>
+
+* [ET1Main](./src/main/java/org/lql/examination/ET1Main.java)
+* [ET2BuildHouse](./src/main/java/org/lql/examination/ET2BuildHouse.java)
+* [MT1FourSum](./src/main/java/org/lql/examination/MT1FourSum.java)
+* [MT2Maze](./src/main/java/org/lql/examination/MT2Maze.java)
+
+</details>
 
 <details>
 <summary>leetcode</summary>
@@ -82,6 +91,7 @@
 * 【day067】3.10[MyPowerI-50. Pow(x, n)](./src/main/java/org/lql/leetcode/MyPowerI.java)
 * 【day068】3.11[SolveNQueensI-51. N 皇后](./src/main/java/org/lql/leetcode/SolveNQueensI.java)
 * 【day069】3.12[GetSkyline-218. 天际线问题](./src/main/java/org/lql/leetcode/GetSkyline.java)
+* 【day070】3.13[Trap-42. 接雨水](./src/main/java/org/lql/leetcode/Trap.java)
 
 * [LeetCode](./src/main/java/org/lql/leetcode/LeetCode.md)
 
@@ -246,6 +256,19 @@
 
 * [==========week-010==========]
 
+* [CountBits-338. 比特位计数](./src/main/java/org/lql/practice/week10/CountBits.java)【待完成】
+* [CountRangeSum-327. 区间和的个数](./src/main/java/org/lql/practice/week10/CountRangeSum.java)【待完成】
+* [GetSkyline-218. 天际线问题](./src/main/java/org/lql/practice/week10/GetSkyline.java)【待完成】
+* [HammingWeight-191. 位1的个数](./src/main/java/org/lql/practice/week10/HammingWeight.java)【待完成】
+* [IntegerProblem-243. 一个简单的整数问题2](./src/main/java/org/lql/practice/week10/IntegerProblem.java)【待完成】
+* [IsPowerOfTwo-231. 2 的幂](./src/main/java/org/lql/practice/week10/IsPowerOfTwo.java)【待完成】
+* [MinInterval-1851. 包含每个查询的最小区间](./src/main/java/org/lql/practice/week10/MinInterval.java)【待完成】
+* [MyPow-50. Pow(x, n)](./src/main/java/org/lql/practice/week10/MyPow.java)【待完成】
+* [NumArray-307. 区域和检索 - 数组可修改](./src/main/java/org/lql/practice/week10/NumArray.java)【待完成】
+* [ReverseBits-190. 颠倒二进制位](./src/main/java/org/lql/practice/week10/ReverseBits.java)【待完成】
+* [SolveNQueens-51. N 皇后](./src/main/java/org/lql/practice/week10/SolveNQueens.java)【待完成】
+* [SolveSudoku-37. 解数独](./src/main/java/org/lql/practice/week10/SolveSudoku.java)【待完成】
+
 </details>
 <details>
 <summary>week01</summary>
@@ -338,5 +361,16 @@
 * [ReverseWords-151. 翻转字符串里的单词](./src/main/java/org/lql/week09/ReverseWords.java)【待完成】
 * [ShortestPathBinaryMatrix-1091. 二进制矩阵中的最短路径](./src/main/java/org/lql/week09/ShortestPathBinaryMatrix.java)【待完成】
 * [ToLowerCase-709. 转换成小写字母](./src/main/java/org/lql/week09/ToLowerCase.java)【已完成】
+
+</details>
+
+<details>
+<summary>week10</summary>
+
+* [FallingSquares-699. 掉落的方块](./src/main/java/org/lql/week10/FallingSquares.java)【待完成】
+* [GeneralBalanceTree-253. 普通平衡树](./src/main/java/org/lql/week10/GeneralBalanceTree.java)【待完成】
+* [MaxSlidingWindow-239. 滑动窗口最大值](./src/main/java/org/lql/week10/MaxSlidingWindow.java)【待完成】
+* [NeighborSearch-136. 邻值查找](./src/main/java/org/lql/week10/NeighborSearch.java)【待完成】
+* [Skiplist-1206. 设计跳表](./src/main/java/org/lql/week10/Skiplist.java)【待完成】
 
 </details>
