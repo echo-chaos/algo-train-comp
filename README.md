@@ -374,3 +374,19 @@
 * [Skiplist-1206. 设计跳表](./src/main/java/org/lql/week10/Skiplist.java)【待完成】
 
 </details>
+
+<details>
+<summary>summary</summary>
+
+* [Week001-数组、链表、栈、队列](./src/main/java/org/lql/summary/Week001-数组、链表、栈、队列.md)
+* [Week002-哈希表、集合、映射、前缀和、差分、双指针扫描.md](./src/main/java/org/lql/summary/Week002-哈希表、集合、映射、前缀和、差分、双指针扫描.md)
+* [Week003-递归、分治、树与图🌲.md](./src/main/java/org/lql/summary/Week003-递归、分治、树与图🌲.md)
+* [Week004-深度优先搜索、广度优先搜索、二叉堆、二叉搜索树🌲.md](./src/main/java/org/lql/summary/Week004-深度优先搜索、广度优先搜索、二叉堆、二叉搜索树🌲.md)
+* [Week005-二分、排序.md](./src/main/java/org/lql/summary/Week005-二分、排序.md)
+* [Week006-贪心、动态规划.md](./src/main/java/org/lql/summary/Week006-贪心、动态规划.md)
+* [Week007-动态规划.md](./src/main/java/org/lql/summary/Week007-动态规划.md)
+* [Week008-字典树🌲、并查集、图论算法.md](./src/main/java/org/lql/summary/Week008-字典树🌲、并查集、图论算法.md)
+* [Week009-字符串处理、高级搜索.md](./src/main/java/org/lql/summary/Week009-字符串处理、高级搜索.md)
+* [Week010-平衡二叉树🌲、跳跃表、树🌲状数组与线段树🌲.md](./src/main/java/org/lql/summary/Week010-平衡二叉树🌲、跳跃表、树🌲状数组与线段树🌲.md)
+
+</details>
