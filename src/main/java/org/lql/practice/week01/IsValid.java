@@ -5,11 +5,11 @@ import java.util.Stack;
 /**
  * @author: lql
  * @date: 2022/2/2 23:54
- * @description: 20. 有效的括号 https://leetcode-cn.com/problems/valid-parentheses/
+ * @description: 20. 有效的括号 <a href="https://leetcode-cn.com/problems/valid-parentheses/">...</a>
  */
 public class IsValid {
 
-    private Stack<Character> stack = new Stack<>();
+    private final Stack<Character> stack = new Stack<>();
 
     public boolean isValid(String s) {
         for (char ch : s.toCharArray()) {

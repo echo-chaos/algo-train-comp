@@ -7,12 +7,12 @@ import java.util.Map;
 /**
  * @author: lql
  * @date: 2022/1/3 16:51
- * @description: 1. 两数之和 https://leetcode-cn.com/problems/two-sum/description/
+ * @description: <a href="https://leetcode-cn.com/problems/two-sum/description/">1. 两数之和</a>
  */
 public class TwoSum {
 
     public int[] twoSum(int[] nums, int target) {
-        Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+        Map<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
             if (map.containsKey(target - nums[i])) {
                 return new int[]{map.get(target - nums[i]), i};
@@ -24,7 +24,7 @@ public class TwoSum {
 
     public static void main(String[] args) {
         TwoSum twoSum = new TwoSum();
-        int[] nums = {2,7,11,15};
+        int[] nums = {2, 7, 11, 15};
         int target = 9;
         System.out.println(Arrays.toString(nums));
         nums = twoSum.twoSum(nums, target);

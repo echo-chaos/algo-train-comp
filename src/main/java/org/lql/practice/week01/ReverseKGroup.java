@@ -5,7 +5,7 @@ import org.lql.common.ListNode;
 /**
  * @author: lql
  * @date: 2022/2/2 23:47
- * @description: 25. K 个一组翻转链表 https://leetcode-cn.com/problems/reverse-nodes-in-k-group/
+ * @description: 25. K 个一组翻转链表 <a href="https://leetcode-cn.com/problems/reverse-nodes-in-k-group/">...</a>
  */
 public class ReverseKGroup {
 

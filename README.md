@@ -102,6 +102,7 @@
 
 * [==========week-001==========]
 * [Calculate-224. 基本计算器](./src/main/java/org/lql/practice/week01/Calculate.java)【已完成】
+* [Solution-227. 基本计算器II](./src/main/java/org/lql/practice/week01/Solution.java)【已完成】
 * [DetectCycle-142. 环形链表 II ](./src/main/java/org/lql/practice/week01/DetectCycle.java)【已完成】
 * [EvalRPN-150. 逆波兰表达式求值](./src/main/java/org/lql/practice/week01/EvalRPN.java)【已完成】
 * [HasCycle-141. 环形链表](./src/main/java/org/lql/practice/week01/HasCycle.java)【已完成】

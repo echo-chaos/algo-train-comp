@@ -5,7 +5,7 @@ import org.lql.common.ListNode;
 /**
  * @author: lql
  * @date: 2022/2/2 23:53
- * @description: 142. 环形链表 II https://leetcode-cn.com/problems/linked-list-cycle-ii/
+ * @description: 142. 环形链表 II <a href="https://leetcode-cn.com/problems/linked-list-cycle-ii/">...</a>
  */
 public class DetectCycle {
 

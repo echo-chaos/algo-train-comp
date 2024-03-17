@@ -6,7 +6,7 @@ import java.util.Stack;
 /**
  * @author: lql
  * @date: 2022/1/3 20:54
- * @description: 224. 基本计算器 https://leetcode-cn.com/problems/basic-calculator/
+ * @description: 224. 基本计算器 <a href="https://leetcode-cn.com/problems/basic-calculator/">...</a>
  */
 public class Calculate {
 
@@ -17,6 +17,7 @@ public class Calculate {
         s += " ";
         ArrayList<String> tokens = new ArrayList<>();
         String numbers = "";
+        // 遇到负数时需要在前面补0，是否需要补0
         boolean needZero = true;
         for (char ch : s.toCharArray()) {
             if (ch >= '0' && ch <= '9') {
@@ -24,7 +25,7 @@ public class Calculate {
                 needZero = false;
                 continue;
             } else {
-                if (numbers != "") {
+                if (!numbers.isEmpty()) {
                     tokens.add(numbers);
                     numbers = "";
                 }

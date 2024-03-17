@@ -5,11 +5,11 @@ import java.util.Stack;
 /**
  * @author: lql
  * @date: 2022/1/3 20:53
- * @description: 150. 逆波兰表达式求值 https://leetcode-cn.com/problems/evaluate-reverse-polish-notation/
+ * @description: 150. 逆波兰表达式求值 <a href="https://leetcode-cn.com/problems/evaluate-reverse-polish-notation/">...</a>
  */
 public class EvalRPN {
 
-    private Stack<Integer> stack = new Stack<>();
+    private final Stack<Integer> stack = new Stack<>();
 
     public int evalRPN(String[] tokens) {
         for (String token : tokens) {

@@ -1,12 +1,11 @@
 package org.lql.practice.week02;
 
-import java.util.*;
-import java.util.stream.Collectors;
+import java.util.Arrays;
 
 /**
  * @author: lql
  * @date: 2022/1/9 23:32
- * @description: 167. 两数之和 II - 输入有序数组 https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/
+ * @description: 167. 两数之和 II - 输入有序数组 <a href="https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/">...</a>
  */
 public class TwoSum {
 
