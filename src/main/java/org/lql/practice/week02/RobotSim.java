@@ -9,7 +9,7 @@ import java.util.Map;
 /**
  * @author: lql
  * @date: 2022/1/3 22:32
- * @description: 874. 模拟行走机器人 https://leetcode-cn.com/problems/walking-robot-simulation/
+ * @description: 874. 模拟行走机器人 <a href="https://leetcode-cn.com/problems/walking-robot-simulation/">...</a>
  */
 public class RobotSim {
 
@@ -39,28 +39,35 @@ public class RobotSim {
         }
         int x = 0;
         int y = 0;
-        // N-0 E-1 S-2 W-3
+        // 方向：N-0 E-1 S-2 W-3
         int dir = 0;
         // 方向数组
         int[] directionX = {0, 1, 0, -1};
         int[] directionY = {1, 0, -1, 0};
+        // 结果
         int ans = 0;
         for (int command : commands) {
+            // 判断是否为转换方向
             if (command == -1) {
                 dir = (dir + 1) % 4;
             } else if (command == -2) {
                 dir = (dir - 1 + 4) % 4;
             } else {
+                // 开始行走，并且判断是否遇到障碍物
                 for (int i = 0; i < command; i++) {
+                    // 计算下一步位置坐标
                     int nx = x + directionX[dir];
                     int ny = y + directionY[dir];
+                    // 如果下一个点是障碍物，就停止->跳过当前循环
                     if (obs.containsKey(calHash(new int[]{nx, ny}))) {
                         break;
                     }
+                    // 行走一步->更新当前位置
                     x = nx;
                     y = ny;
                 }
             }
+            // 一次行走更新一次当前最远位置
             ans = Math.max(ans, x * x + y * y);
         }
         return ans;
@@ -76,6 +83,6 @@ public class RobotSim {
         int[] commands = {4, -1, 4, -2, 4};
         int[][] obstacles = {{2, 4}};
         int sim = robotSim.robotSim(commands, obstacles);
-        System.out.println(sim);
+        logger.info("sim {}", sim);
     }
 }

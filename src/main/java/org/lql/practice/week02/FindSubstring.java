@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * @author: lql
  * @date: 2022/1/3 22:34
- * @description: 30. 串联所有单词的子串 https://leetcode-cn.com/problems/substring-with-concatenation-of-all-words/
+ * @description: 30. 串联所有单词的子串 <a href="https://leetcode-cn.com/problems/substring-with-concatenation-of-all-words/">...</a>
  */
 public class FindSubstring {
 
@@ -13,9 +13,7 @@ public class FindSubstring {
      * 给定一个字符串s和一些 长度相同 的单词words 。找出 s 中恰好可以由words 中所有单词串联形成的子串的起始位置。
      * <p>
      * 注意子串要与words 中的单词完全匹配，中间不能有其他字符 ，但不需要考虑words中单词串联的顺序。
-     */
-
-    /**
+     * <p>
      * 输入：s = "barfoothefoobarman", words = ["foo","bar"]
      * 输出：[0,9]
      * 解释：
@@ -41,9 +39,9 @@ public class FindSubstring {
         int tot = 0;
         for (String word : words) {
             tot += word.length();
+            // 将words中的单词和出现次数写到wordsMap中
             if (wordsMap.containsKey(word)) {
-                Integer integer = wordsMap.get(word);
-                wordsMap.put(word, ++integer);
+                wordsMap.put(word, wordsMap.get(word) + 1);
             } else {
                 wordsMap.put(word, 1);
             }
@@ -51,6 +49,7 @@ public class FindSubstring {
         List<Integer> ans = new ArrayList<>();
         // 按照单词长度分隔字符
         for (int i = 0; i + tot <= s.length(); i++) {
+            // 按照总的单词长度切割字符串，并与words进行比较
             String substring = s.substring(i, i + tot);
             if (valid(substring, words)) {
                 ans.add(i);

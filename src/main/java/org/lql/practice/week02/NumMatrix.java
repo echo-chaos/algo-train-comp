@@ -3,7 +3,7 @@ package org.lql.practice.week02;
 /**
  * @author: lql
  * @date: 2022/1/3 22:37
- * @description: 304. 二维区域和检索 - 矩阵不可变 https://leetcode-cn.com/problems/range-sum-query-2d-immutable/
+ * @description: 304. 二维区域和检索 - 矩阵不可变 <a href="https://leetcode-cn.com/problems/range-sum-query-2d-immutable/">...</a>
  */
 public class NumMatrix {
     int[][] sum;
@@ -44,7 +44,7 @@ public class NumMatrix {
     public static void main(String[] args) {
         int[][] matrix = {{3, 0, 1, 4, 2}, {5, 6, 3, 2, 1}, {1, 2, 0, 1, 5}, {4, 1, 0, 1, 7}, {1, 0, 3, 0, 5}};
         NumMatrix numMatrix = new NumMatrix(matrix);
-        int sumRegion = 0;
+        int sumRegion;
         sumRegion = numMatrix.sumRegion(2, 1, 4, 3);
         System.out.println(sumRegion);
         sumRegion = numMatrix.sumRegion(1, 1, 2, 2);
