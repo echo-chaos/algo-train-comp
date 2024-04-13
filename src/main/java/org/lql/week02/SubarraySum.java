@@ -9,7 +9,7 @@ import java.util.Map;
 /**
  * @author: lql
  * @date: 2022/1/3 22:43
- * @description: 560. 和为 K 的子数组 https://leetcode-cn.com/problems/subarray-sum-equals-k/
+ * @description: 560. 和为 K 的子数组 <a href="https://leetcode-cn.com/problems/subarray-sum-equals-k/">...</a>
  */
 public class SubarraySum {
 
@@ -54,11 +54,33 @@ public class SubarraySum {
         return count;
     }
 
+    public int subarraySumA(int[] nums, int k) {
+        if (nums.length == 0) {
+            return 0;
+        }
+        int n = nums.length;
+        int[] sum = new int[n + 1];
+        sum[0] = 0;
+        for (int i = 1; i <= n; i++) {
+            sum[i] = sum[i - 1] + nums[i - 1];
+        }
+        int ans = 0;
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i <= n; i++) {
+            int target = sum[i] - k;
+            if (map.containsKey(target)) {
+                ans += map.get(target);
+            }
+            map.put(sum[i], map.getOrDefault(sum[i], 0) + 1);
+        }
+        return ans;
+    }
+
     public static void main(String[] args) {
         SubarraySum sum = new SubarraySum();
         int[] nums = {1, 1, 1};
         int k = 2;
-        int i = sum.subarraySum(nums, k);
-        System.out.println(i);
+        System.out.println(sum.subarraySum(nums, k));
+        System.out.println(sum.subarraySumA(nums, k));
     }
 }

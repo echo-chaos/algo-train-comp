@@ -6,7 +6,7 @@ import java.util.Map;
 /**
  * @author: lql
  * @date: 2022/1/3 22:42
- * @description: 697. 数组的度 https://leetcode-cn.com/problems/degree-of-an-array/
+ * @description: 697. 数组的度 <a href="https://leetcode-cn.com/problems/degree-of-an-array/">...</a>
  */
 public class FindShortestSubArray {
 
@@ -14,9 +14,7 @@ public class FindShortestSubArray {
      * 给定一个非空且只包含非负数的整数数组nums，数组的 度 的定义是指数组里任一元素出现频数的最大值。
      * <p>
      * 你的任务是在 nums 中找到与nums拥有相同大小的度的最短连续子数组，返回其长度。
-     */
-
-    /**
+     * <p>
      * 输入：nums = [1,2,2,3,1]
      * 输出：2
      * 解释：
@@ -36,24 +34,33 @@ public class FindShortestSubArray {
      */
     public int findShortestSubArray(int[] nums) {
         // int[] 元素的度,初始位置，末位置
-        Map<Integer, int[]> map = new HashMap<Integer, int[]>();
+        Map<Integer, int[]> map = new HashMap<>();
         int n = nums.length;
         for (int i = 0; i < n; i++) {
+            // map中已有数组元素
             if (map.containsKey(nums[i])) {
+                // 更新元素的度
                 map.get(nums[i])[0]++;
+                // 更新元素的末位置的值
                 map.get(nums[i])[2] = i;
             } else {
+                // map添加 元素：[元素的初始度，元素的初始出现位置，元素的初始末位置]
                 map.put(nums[i], new int[]{1, i, i});
             }
         }
-        int maxNum = 0, minLen = 0;
+        // 元素的度
+        int maxNum = 0;
+        // 包含元素的数组的长度
+        int minLen = 0;
         for (Map.Entry<Integer, int[]> entry : map.entrySet()) {
             int[] arr = entry.getValue();
-            // 寻找数组的度
             if (maxNum < arr[0]) {
+                // 更新数组的度
                 maxNum = arr[0];
+                // 更新元素数组的长度
                 minLen = arr[2] - arr[1] + 1;
             } else if (maxNum == arr[0]) {
+                // 比较相同度下数组的长度
                 if (minLen > arr[2] - arr[1] + 1) {
                     minLen = arr[2] - arr[1] + 1;
                 }
