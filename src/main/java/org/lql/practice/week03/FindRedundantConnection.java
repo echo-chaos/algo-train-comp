@@ -1,9 +1,13 @@
 package org.lql.practice.week03;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * @author: lql
  * @date: 2022/2/13 20:36
- * @description: 684. 冗余连接 https://leetcode-cn.com/problems/redundant-connection/description/
+ * @description: 684. 冗余连接 <a href="https://leetcode-cn.com/problems/redundant-connection/description/">...</a>
  */
 public class FindRedundantConnection {
 
@@ -26,7 +30,76 @@ public class FindRedundantConnection {
      * edges 中无重复元素
      * 给定的图是连通的
      */
+
+    List<List<Integer>> to;
+    // n：树的节点
+    int n;
+    // 节点是否访问过
+    boolean[] visited;
+    // 是否成环
+    boolean hasCycle;
+
     public int[] findRedundantConnection(int[][] edges) {
+        n = 0;
+        // 统计数的节点个数
+        for (int[] edge : edges) {
+            int x = edge[0];
+            int y = edge[1];
+            n = Math.max(n, Math.max(x, y));
+        }
+        // 初始化
+        to = new ArrayList<>();
+        for (int i = 0; i < n + 1; i++) {
+            to.add(new ArrayList<>());
+        }
+        visited = new boolean[n + 1];
+        // 出边数组
+        for (int[] edge : edges) {
+            int x = edge[0];
+            int y = edge[1];
+            // 出边数组加边
+            to.get(x).add(y);
+            to.get(y).add(x);
+            // 初始设置无环
+            hasCycle = false;
+            dfs(x, 0);
+            if (hasCycle) {
+                return edge;
+            }
+        }
+
         return new int[]{};
+    }
+
+    /**
+     * 图的深度优先遍历判断环的模板
+     *
+     * @param x      开始遍历的点
+     * @param father 父节点
+     */
+    public void dfs(int x, int father) {
+        visited[x] = true;
+        // 出边数组访问x能到的周围点的方法
+        for (int y : to.get(x)) {
+            // 访问到了父节点，跳过【人为遍历过程产生的环不是真正的环】
+            if (y == father) {
+                continue;
+            }
+            // 访问未访问过的边
+            if (!visited[y]) {
+                dfs(y, x);
+            } else {
+                // 否则说明已经成环
+                hasCycle = true;
+            }
+        }
+        // 还原节点访问情况，不影响后序的访问
+        visited[x] = false;
+    }
+
+    public static void main(String[] args) {
+        FindRedundantConnection findRedundantConnection = new FindRedundantConnection();
+        int[][] edges = new int[][]{{1, 2}, {1, 3}, {2, 3}};
+        System.out.println(Arrays.toString(findRedundantConnection.findRedundantConnection(edges)));
     }
 }

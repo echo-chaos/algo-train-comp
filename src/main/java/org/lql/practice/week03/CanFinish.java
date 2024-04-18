@@ -1,9 +1,14 @@
 package org.lql.practice.week03;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+
 /**
  * @author: lql
  * @date: 2022/2/13 20:35
- * @description: 207. 课程表 https://leetcode-cn.com/problems/course-schedule/
+ * @description: 207. 课程表 <a href="https://leetcode-cn.com/problems/course-schedule/">...</a>
  */
 public class CanFinish {
 
@@ -21,7 +26,57 @@ public class CanFinish {
      * 0 <= ai, bi < numCourses
      * prerequisites[i] 中的所有课程对 互不相同
      */
+
+    // 出边数组
+    public List<List<Integer>> to;
+    // 节点的度
+    int[] inDegree;
+
     public boolean canFinish(int numCourses, int[][] prerequisites) {
-        return false;
+        // 初始化
+        to = new ArrayList<>();
+        inDegree = new int[numCourses];
+        for (int i = 0; i < numCourses; i++) {
+            to.add(new ArrayList<>());
+        }
+        // 出边数组数据
+        for (int[] prerequisite : prerequisites) {
+            int ai = prerequisite[0];
+            int bi = prerequisite[1];
+            to.get(bi).add(ai);
+            inDegree[ai]++;
+        }
+        // 广搜队列：存放可以学习的课程
+        Queue<Integer> queue = new LinkedList<>();
+        // 学习过的课程
+        List<Integer> lesson = new ArrayList<>();
+        // 拓扑排序第一步：从零入读的点出发
+        // 即：寻找某一门可以直接学习的课程，开始学习
+        for (int i = 0; i < numCourses; i++) {
+            // 节点的度为0，表示可以直接学习的课程
+            if (inDegree[i] == 0) {
+                queue.offer(i);
+            }
+        }
+        while (!queue.isEmpty()) {
+            Integer x = queue.poll();
+            lesson.add(x);
+            // 拓扑排序第二步：扩展一个点，周围的点入读减一
+            for (Integer y : to.get(x)) {
+                inDegree[y]--;
+                // 拓扑排序第三步：入读减为0，表示可以入队=>可以进行学习
+                if (inDegree[y] == 0) {
+                    queue.offer(y);
+                }
+            }
+        }
+        return lesson.size() == numCourses;
+    }
+
+    public static void main(String[] args) {
+        CanFinish canFinish = new CanFinish();
+        int numCourses = 2;
+        int[][] prerequisites = new int[][]{{1, 0}};
+        System.out.println(canFinish.canFinish(numCourses, prerequisites));
     }
 }

@@ -3,7 +3,7 @@ package org.lql.practice.week03;
 /**
  * @author: lql
  * @date: 2022/2/11 22:14
- * @description: 50. Pow(x, n) https://leetcode-cn.com/problems/powx-n/
+ * @description: 50. Pow(x, n) <a href="https://leetcode-cn.com/problems/powx-n/">...</a>
  */
 public class MyPow {
 
@@ -18,9 +18,11 @@ public class MyPow {
         if (n == 0) {
             return 1;
         }
+        // n的值在边界上，处理边界问题
         if (n == -(1 << 31)) {
             return 1.0 / (myPow(x, -(n + 1)) * x);
         }
+        // n为负数时，转换为正数再计算，并且转换为负次幂运算
         if (n < 0) {
             return 1.0 / myPow(x, -n);
         }
@@ -35,6 +37,6 @@ public class MyPow {
     public static void main(String[] args) {
         MyPow myPow = new MyPow();
         double v = myPow.myPow(2.00000, 10);
-        System.out.print(String.valueOf(v));
+        System.out.print(v);
     }
 }

@@ -6,21 +6,22 @@ import java.util.List;
 /**
  * @author: lql
  * @date: 2022/1/10 23:49
- * @description: 46. 全排列 https://leetcode-cn.com/problems/permutations/
+ * @description: 46. 全排列 <a href="https://leetcode-cn.com/problems/permutations/">...</a>
  */
 public class Permute {
 
+    /**
+     * 给定一个不含重复数字的数组 nums ，返回其 所有可能的全排列 。你可以 按任意顺序 返回答案。
+     */
+
     int n;
-    Boolean[] used;
+    boolean[] used;
     List<Integer> range = new ArrayList<>();
     List<List<Integer>> ans = new ArrayList<>();
 
     public List<List<Integer>> permute(int[] nums) {
         n = nums.length;
-        used = new Boolean[n];
-        for (int i = 0; i < n; i++) {
-            used[i] = false;
-        }
+        used = new boolean[n];
         recur(nums, 0);
         return ans;
     }
@@ -28,7 +29,7 @@ public class Permute {
     private void recur(int[] nums, int pos) {
         // 递归边界
         if (pos == n) {
-            ans.add(new ArrayList<Integer>(range));
+            ans.add(new ArrayList<>(range));
             return;
         }
 

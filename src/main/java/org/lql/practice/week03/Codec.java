@@ -2,10 +2,13 @@ package org.lql.practice.week03;
 
 import org.lql.common.TreeNode;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @author: lql
  * @date: 2022/2/11 22:20
- * @description: 297. 二叉树的序列化与反序列化 https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree/
+ * @description: 297. 二叉树的序列化与反序列化 <a href="https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree/">...</a>
  */
 public class Codec {
 
@@ -27,13 +30,60 @@ public class Codec {
 
     // Encodes a tree to a single string.
     public String serialize(TreeNode root) {
-
-        return "";
+        List<String> seq = new ArrayList<>();
+        dfs(seq, root);
+        return String.join(",", seq);
     }
+
+    /**
+     * 前序遍历序列化二叉树
+     *
+     * @param seq  存储数节点信息
+     * @param root 根节点
+     */
+    public void dfs(List<String> seq, TreeNode root) {
+        if (root == null) {
+            seq.add("null");
+            return;
+        }
+        seq.add(String.valueOf(root.val));
+        dfs(seq, root.left);
+        dfs(seq, root.right);
+    }
+
+    String[] seq;
+    int current;
 
     // Decodes your encoded data to tree.
     public TreeNode deserialize(String data) {
-
-        return null;
+        seq = data.split(",");
+        current = 0;
+        return restore();
     }
+
+    public TreeNode restore() {
+        if ("null".equals(seq[current])) {
+            current++;
+            return null;
+        }
+        TreeNode root = new TreeNode(Integer.parseInt(seq[current]));
+        current++;
+        root.left = restore();
+        root.right = restore();
+        return root;
+    }
+
+    public static void main(String[] args) {
+        Codec codec = new Codec();
+        TreeNode root = new TreeNode(1,
+                new TreeNode(2),
+                new TreeNode(3,
+                        new TreeNode(4),
+                        new TreeNode(5)));
+        String serialize = codec.serialize(root);
+        System.out.println(serialize);
+        TreeNode node = codec.deserialize(serialize);
+        System.out.println(codec.serialize(codec.deserialize("1,2,null,null,3,4,null,null,5,null,null")));
+    }
+
 }
