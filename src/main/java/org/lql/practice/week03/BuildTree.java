@@ -37,33 +37,33 @@ public class BuildTree {
      * 中序遍历：左-根-右
      * 后序遍历：左-右-根
      *
-     * @param l1 前序起点
-     * @param r1 前序终点
-     * @param l2 中序起点
-     * @param r2 中序终点
+     * @param preStart 前序起点
+     * @param preEnd   前序终点
+     * @param inStart  中序起点
+     * @param inEnd    中序终点
      * @return 二叉树
      */
-    public TreeNode build(int l1, int r1, int l2, int r2) {
+    public TreeNode build(int preStart, int preEnd, int inStart, int inEnd) {
         // 边界判断：如果左边界超过右边界，说明没有元素可操作
-        if (l1 > r1) {
+        if (preStart > preEnd) {
             return null;
         }
         // 前序遍历的第一个点是根节点 -> preOrder的左边界就是根节点的值
-        TreeNode root = new TreeNode(preorder[l1]);
+        TreeNode root = new TreeNode(preorder[preStart]);
         // 寻找中序遍历中的根节点所在位置
-        int mid = l2;
+        int mid = inStart;
         while (inorder[mid] != root.val) {
             mid++;
         }
-        // l2 ~ mid-1 左子数的中序
-        // mid+1 ～ r2 右子数的中序
+        // inStart ~ mid-1 左子数的中序
+        // mid+1 ～ inEnd 右子数的中序
         // 构造左子数：
-        //  前序：l1 + 1 ~ l1 + (mid - 1 - l2 + 1)
-        //  中序：l2 ~ mid -1
+        //  前序：preStart + 1 ~ preStart + (mid - 1 - inStart + 1)
+        //  中序：inStart ~ mid -1
         // 构造右子数
-        //  前序： l1 + 1 + （mid - l2）~ r1
-        root.left = build(l1 + 1, l1 + (mid - l2), l2, mid - 1);
-        root.right = build(l1 + (mid - l2) + 1, r1, mid + 1, r2);
+        //  前序： preStart + 1 + （mid - inStart）~ preEnd
+        root.left = build(preStart + 1, preStart + (mid - inStart), inStart, mid - 1);
+        root.right = build(preStart + (mid - inStart) + 1, preEnd, mid + 1, inEnd);
         return root;
     }
 

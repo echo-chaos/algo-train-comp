@@ -7,7 +7,7 @@ import org.slf4j.LoggerFactory;
 /**
  * @author: lql
  * @date: 2022/1/10 22:18
- * @description: 23. 合并K个升序链表 https://leetcode-cn.com/problems/merge-k-sorted-lists/
+ * @description: 23. 合并K个升序链表 <a href="https://leetcode-cn.com/problems/merge-k-sorted-lists/">...</a>
  */
 public class MergeKLists {
 
@@ -34,8 +34,6 @@ public class MergeKLists {
      * lists[i] 按 升序 排列
      * lists[i].length 的总和不超过 10^4
      */
-
-    private static final Logger logger = LoggerFactory.getLogger(MergeKLists.class);
 
     public ListNode mergeKLists(ListNode[] lists) {
         if (lists.length == 0) {
