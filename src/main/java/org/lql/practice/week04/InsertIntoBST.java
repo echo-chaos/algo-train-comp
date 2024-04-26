@@ -1,11 +1,12 @@
 package org.lql.practice.week04;
 
+import org.lql.common.PrintTreePreOrder;
 import org.lql.common.TreeNode;
 
 /**
  * @author: lql
  * @date: 2022/2/13 20:54
- * @description: 701. 二叉搜索树中的插入操作 https://leetcode-cn.com/problems/insert-into-a-binary-search-tree/
+ * @description: 701. 二叉搜索树中的插入操作 <a href="https://leetcode-cn.com/problems/insert-into-a-binary-search-tree/">...</a>
  */
 public class InsertIntoBST {
 
@@ -23,7 +24,26 @@ public class InsertIntoBST {
      * 保证val在原始BST中不存在。
      */
     public TreeNode insertIntoBST(TreeNode root, int val) {
+        if (root == null) {
+            return new TreeNode(val);
+        }
+        if (val < root.val) {
+            root.left = insertIntoBST(root.left, val);
+        } else {
+            root.right = insertIntoBST(root.right, val);
+        }
+        return root;
+    }
 
-        return null;
+    public static void main(String[] args) {
+        InsertIntoBST insertIntoBST = new InsertIntoBST();
+        PrintTreePreOrder printTreePreOrder = new PrintTreePreOrder();
+        TreeNode root = new TreeNode(4,
+                new TreeNode(2,
+                        new TreeNode(1), new TreeNode(3)),
+                new TreeNode(7));
+        System.out.println(printTreePreOrder.preorderTraversal(root));
+        insertIntoBST.insertIntoBST(root, 5);
+        System.out.println(printTreePreOrder.preorderTraversal(root));
     }
 }

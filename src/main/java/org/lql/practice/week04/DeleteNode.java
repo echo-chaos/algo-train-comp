@@ -5,7 +5,7 @@ import org.lql.common.TreeNode;
 /**
  * @author: lql
  * @date: 2022/2/13 20:56
- * @description: 450. 删除二叉搜索树中的节点 https://leetcode-cn.com/problems/delete-node-in-a-bst/
+ * @description: 450. 删除二叉搜索树中的节点 <a href="https://leetcode-cn.com/problems/delete-node-in-a-bst/">...</a>
  */
 public class DeleteNode {
 
@@ -24,6 +24,41 @@ public class DeleteNode {
      * -105<= key <= 105
      */
     public TreeNode deleteNode(TreeNode root, int key) {
-        return null;
+        if (root == null) {
+            return null;
+        }
+        if (root.val == key) {
+            if (root.left == null) {
+                return root.right;
+            }
+            if (root.right == null) {
+                return root.left;
+            }
+            TreeNode next = root.right;
+            while (next.left != null) {
+                next = next.left;
+            }
+            root.right = deleteNode(root.right, next.val);
+            root.val = next.val;
+        }
+        if (key < root.val) {
+            root.left = deleteNode(root.left, key);
+        } else {
+            root.right = deleteNode(root.right, key);
+        }
+        return root;
+    }
+
+    public static void main(String[] args) {
+        DeleteNode deleteNode = new DeleteNode();
+        TreeNode root = new TreeNode(5,
+                new TreeNode(3,
+                        new TreeNode(2),
+                        new TreeNode(4)),
+                new TreeNode(6,
+                        null,
+                        new TreeNode(7)));
+        TreeNode treeNode = deleteNode.deleteNode(root, 3);
+        System.out.println();
     }
 }

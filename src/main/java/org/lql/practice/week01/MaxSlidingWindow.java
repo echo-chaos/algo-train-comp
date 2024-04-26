@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * @author: lql
  * @date: 2022/1/3 16:46
- * @description: 239. 滑动窗口最大值 https://leetcode-cn.com/problems/sliding-window-maximum/
+ * @description: 239. 滑动窗口最大值 <a href="https://leetcode-cn.com/problems/sliding-window-maximum/">...</a>
  */
 public class MaxSlidingWindow {
 
@@ -13,7 +13,7 @@ public class MaxSlidingWindow {
     private Deque<Integer> q = new ArrayDeque<>();
 
     public int[] maxSlidingWindow(int[] nums, int k) {
-        // 下标
+        // 下标（时间递增）值递减的队列
         ArrayList<Integer> ans = new ArrayList<>();
         for (int i = 0; i < nums.length; i++) {
             // 删除出界选项
