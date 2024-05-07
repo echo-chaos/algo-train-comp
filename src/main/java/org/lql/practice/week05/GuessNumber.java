@@ -3,7 +3,7 @@ package org.lql.practice.week05;
 /**
  * @author: lql
  * @date: 2022/2/13 21:16
- * @description: 374. 猜数字大小 https://leetcode-cn.com/problems/guess-number-higher-or-lower/
+ * @description: 374. 猜数字大小 <a href="https://leetcode-cn.com/problems/guess-number-higher-or-lower/">...</a>
  */
 public class GuessNumber {
 
@@ -23,7 +23,30 @@ public class GuessNumber {
      * 1 <= n <= 231 - 1
      * 1 <= pick <= n
      */
+    private int pick;
+
     public int guessNumber(int n) {
-        return 0;
+        int left = 1;
+        int right = n;
+        while (left < right) {
+            int mid = left + (right - left) / 2;
+            int res = guess(mid);
+            if (res <= 0) {
+                right = mid;
+            } else {
+                left = mid + 1;
+            }
+        }
+        return right;
+    }
+
+    private int guess(int num) {
+        return Integer.compare(pick, num);
+    }
+
+    public static void main(String[] args) {
+        GuessNumber guessNumber = new GuessNumber();
+        guessNumber.pick = 6;
+        System.out.println(guessNumber.guessNumber(10));
     }
 }

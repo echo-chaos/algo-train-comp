@@ -3,7 +3,7 @@ package org.lql.practice.week05;
 /**
  * @author: lql
  * @date: 2022/2/13 21:13
- * @description: 69. x 的平方根  https://leetcode-cn.com/problems/sqrtx/
+ * @description: 69. x 的平方根  <a href="https://leetcode-cn.com/problems/sqrtx/">...</a>
  */
 public class MySqrt {
 
@@ -17,6 +17,22 @@ public class MySqrt {
      * 0 <= x <= 231 - 1
      */
     public int mySqrt(int x) {
-        return 0;
+        int left = 0;
+        int right = x;
+        while (left < right) {
+            int mid = (left + right + 1) / 2;
+            if (mid <= x / mid) {// 防止算数溢出
+                left = mid;
+            } else {
+                right = mid - 1;
+            }
+        }
+        return right;
+    }
+
+    public static void main(String[] args) {
+        MySqrt mySqrt = new MySqrt();
+        System.out.println(mySqrt.mySqrt(4));
+        System.out.println(mySqrt.mySqrt(8));
     }
 }

@@ -1,9 +1,11 @@
 package org.lql.practice.week05;
 
+import java.util.Arrays;
+
 /**
  * @author: lql
  * @date: 2022/2/13 21:12
- * @description: 34. 在排序数组中查找元素的第一个和最后一个位置 https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/
+ * @description: 34. 在排序数组中查找元素的第一个和最后一个位置 <a href="https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/">...</a>
  */
 public class SearchRange {
 
@@ -15,7 +17,7 @@ public class SearchRange {
      * 进阶：
      * <p>
      * 你可以设计并实现时间复杂度为O(log n)的算法解决此问题吗？
-     * 
+     *
      * <p>
      * 0 <= nums.length <= 105
      * -109<= nums[i]<= 109
@@ -23,6 +25,40 @@ public class SearchRange {
      * -109<= target<= 109
      */
     public int[] searchRange(int[] nums, int target) {
-        return new int[]{};
+        // 开始位置：第一个>=target
+        // 结束位置：最后一个<=target
+        int left = 0;
+        int right = nums.length;
+        int[] ans = new int[2];
+        while (left < right) {
+            int mid = (left + right) / 2;
+            if (nums[mid] >= target) {
+                right = mid;
+            } else {
+                left = mid + 1;
+            }
+        }
+        ans[0] = right;
+        left = -1;
+        right = nums.length - 1;
+        while (left < right) {
+            int mid = (left + right + 1) / 2;
+            if (nums[mid] <= target) {
+                left = mid;
+            } else {
+                right = mid - 1;
+            }
+        }
+        ans[1] = right;
+        // 不存在
+        if (ans[0] > ans[1]) {
+            return new int[]{-1, -1};
+        }
+        return ans;
+    }
+
+    public static void main(String[] args) {
+        SearchRange searchRange = new SearchRange();
+        System.out.println(Arrays.toString(searchRange.searchRange(new int[]{5, 7, 7, 8, 8, 10}, 8)));
     }
 }
