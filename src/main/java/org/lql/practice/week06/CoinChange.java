@@ -3,7 +3,7 @@ package org.lql.practice.week06;
 /**
  * @author: lql
  * @date: 2022/2/13 21:36
- * @description: 322. 零钱兑换 https://leetcode-cn.com/problems/coin-change/
+ * @description: 322. 零钱兑换 <a href="https://leetcode-cn.com/problems/coin-change/">...</a>
  */
 public class CoinChange {
 
@@ -20,6 +20,28 @@ public class CoinChange {
      * 0 <= amount <= 104
      */
     public int coinChange(int[] coins, int amount) {
-        return 0;
+        long[] dp = new long[amount + 1];
+        for (int i = 1; i <= amount; i++) {
+            dp[i] = Integer.MAX_VALUE;
+            for (int coin : coins) {
+                if (i - coin >= 0) {
+                    dp[i] = Math.min(dp[i], dp[i - coin] + 1);
+                }
+            }
+        }
+        if (dp[amount] >= Integer.MAX_VALUE) {
+            dp[amount] = -1;
+        }
+        return (int) dp[amount];
+    }
+
+    public static void main(String[] args) {
+        CoinChange coinChange = new CoinChange();
+        // 3
+        System.out.println(coinChange.coinChange(new int[]{1, 2, 5}, 11));
+        // -1
+        System.out.println(coinChange.coinChange(new int[]{2}, 3));
+        // 0
+        System.out.println(coinChange.coinChange(new int[]{1}, 0));
     }
 }

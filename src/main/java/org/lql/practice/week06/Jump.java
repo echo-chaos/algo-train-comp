@@ -3,7 +3,7 @@ package org.lql.practice.week06;
 /**
  * @author: lql
  * @date: 2022/2/13 22:09
- * @description: 45. 跳跃游戏 II https://leetcode-cn.com/problems/jump-game-ii/
+ * @description: 45. 跳跃游戏 II <a href="https://leetcode-cn.com/problems/jump-game-ii/">...</a>
  */
 public class Jump {
 

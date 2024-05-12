@@ -3,7 +3,7 @@ package org.lql.practice.week06;
 /**
  * @author: lql
  * @date: 2022/2/13 22:07
- * @description: 122. 买卖股票的最佳时机 II https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/
+ * @description: 122. 买卖股票的最佳时机 II <a href="https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/">...</a>
  */
 public class MaxProfit {
 

@@ -6,7 +6,7 @@ import java.util.Map;
 /**
  * @author: lql
  * @date: 2022/2/13 21:38
- * @description: 860. 柠檬水找零 https://leetcode-cn.com/problems/lemonade-change/description/
+ * @description: 860. 柠檬水找零 <a href="https://leetcode-cn.com/problems/lemonade-change/description/">...</a>
  */
 public class LemonadeChange {
 
@@ -27,7 +27,7 @@ public class LemonadeChange {
      */
 
     // 零钱数量
-    private Map<Integer, Integer> coins = new HashMap<>();
+    private final Map<Integer, Integer> coins = new HashMap<>();
 
     public boolean lemonadeChange(int[] bills) {
         coins.put(5, 0);
@@ -55,8 +55,6 @@ public class LemonadeChange {
 
     public static void main(String[] args) {
         LemonadeChange lemonadeChange = new LemonadeChange();
-        int[] bills = {5, 5, 5, 10, 20};
-        boolean b = lemonadeChange.lemonadeChange(bills);
-        System.out.println(b);
+        System.out.println(lemonadeChange.lemonadeChange(new int[]{5, 5, 5, 10, 20}));
     }
 }
